@@ -12,7 +12,7 @@
 
 <details>
 
-<summary><font size="5.5"><b>Recent activity</b></font></summary>
+<summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️</b></font></summary>
 
 - #### 🔭 Working:
 
