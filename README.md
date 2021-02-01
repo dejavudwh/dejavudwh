@@ -1,21 +1,18 @@
 ## Hi there <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-
-> Hi, I'm dejavudwh(HDW), A college student from China. [Blog](https://www.cnblogs.com/secoding/)
+> Hi, I'm dejavudwh(HDW), A college student from China. 
 
 ![](https://komarev.com/ghpvc/?username=dejavudwh)
+<img src="https://img.shields.io/badge/BLOG-dejavudwh-blue"><a href="https://www.cnblogs.com/secoding/"></a></img>
+<img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark&count_private=true" style="zoom: 80%;" /> 
 
-### Technical keywords 
-
-Learning...
+### Keywords 
 
 > Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine
 
 
-<img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark&count_private=true" style="zoom: 80%;" />
-
 <details>
 
-<summary><font size="4"><b>Recent activity</b></font></summary>
+<summary><font size="5.5"><b>Recent activity</b></font></summary>
 
 - #### 🔭 Working:
 
