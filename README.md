@@ -2,6 +2,8 @@
 
 > Hi, I'm dejavudwh(HDW), A college student from China.
 
+![](https://komarev.com/ghpvc/?username=dejavudwh)
+
 ### Recent activity 
 
 - #### 🔭 Working:
@@ -21,5 +23,11 @@
 
 ### GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark" style="zoom: 80%;" /><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dejavudwh&langs_count=10&hide=css,html,assembly,racket&layout=compact" style="zoom:80%;" />
+<img src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark" style="zoom: 80%;" />
+
+### Technical keywords 
+
+Just like and still learning 
+
+> Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine
 
