@@ -12,9 +12,11 @@ Just like and still learning
 
 ### GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark" style="zoom: 80%;" />
+<img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark&count_private=true" style="zoom: 80%;" />
 
-### Recent activity 
+<detail>
+
+### <summary>Recent activity</summary>
 
 - #### 🔭 Working:
 
@@ -32,3 +34,4 @@ Just like and still learning
   - [issue](https://github.com/dejavudwh/dejavudwh/issues)
   - [daweihucs@outlook.com](mailto:daweihucs@outlook.com)
 
+</detail>
