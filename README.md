@@ -6,17 +6,16 @@
 
 ### Technical keywords 
 
-Just like and still learning 
+Learning...
 
 > Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine
 
-### GitHub Stats
 
 <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark&count_private=true" style="zoom: 80%;" />
 
-<detail>
+<details>
 
-### <summary>Recent activity</summary>
+<summary><font size="4"><b>Recent activity</b></font></summary>
 
 - #### 🔭 Working:
 
@@ -29,9 +28,6 @@ Just like and still learning
   - 英语
   - 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032)
 
-- #### 💬 Ask me anything：
+</details>
 
-  - [issue](https://github.com/dejavudwh/dejavudwh/issues)
-  - [daweihucs@outlook.com](mailto:daweihucs@outlook.com)
-
-</detail>
+> #### 💬 Ask me anything：[issue](https://github.com/dejavudwh/dejavudwh/issues) or [daweihucs@outlook.com](mailto:daweihucs@outlook.com)
