@@ -27,6 +27,11 @@
 
 - #### Blog posts:
 <!-- BLOG-POST-LIST:START -->
+- [Lab8：文件系统 - dejavudwh](http://www.cnblogs.com/secoding/p/11913837.html)
+- [Lab7：同步互斥 - dejavudwh](http://www.cnblogs.com/secoding/p/11913824.html)
+- [Lab6：进程的调度 - dejavudwh](http://www.cnblogs.com/secoding/p/11913817.html)
+- [Lab4\5：进程和线程 - dejavudwh](http://www.cnblogs.com/secoding/p/11913808.html)
+- [Lab3：虚拟内存管理 - dejavudwh](http://www.cnblogs.com/secoding/p/11913805.html)
 <!-- BLOG-POST-LIST:END -->
 </details>
 
