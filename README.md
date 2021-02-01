@@ -4,21 +4,22 @@
 
 ### Recent activity 
 
-- ##### 🔭 Working:
-  - [The Algorithm Design Manual (2nd Ed.) 中文翻译](https://github.com/dejavudwh/The-Algorithm-Design-Manual)
+- #### 🔭 Working:
+  - [翻译 The Algorithm Design Manual (2nd Ed.)](https://github.com/dejavudwh/The-Algorithm-Design-Manual)
 
-- ##### 🌱 Learning:
+- #### 🌱 Learning:
 
-  | 1                | 2            | 3    | 4                                                            |
-  | :--------------- | ------------ | ---- | ------------------------------------------------------------ |
-  | 微积分、线性代数 | LeetCode刷题 | 英语 | 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032) |
+  - 微积分、线性代数
+  - LeetCode刷题
+  - 英语
+  - 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032)
 
-- ##### 💬 Ask me anything：
+- #### 💬 Ask me anything：
 
   - [issue](https://github.com/dejavudwh/dejavudwh/issues)
   - [daweihucs@outlook.com](mailto:daweihucs@outlook.com)
 
 ### GitHub Stats
 
-![](https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark)
+<img src="https://github-readme-stats.vercel.app/api?username=dejavudwh&show_icons=true&theme=onedark" style="zoom: 80%;" /><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dejavudwh&langs_count=10&hide=css,html,assembly,racket&layout=compact" style="zoom:80%;" />
 
