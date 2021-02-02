@@ -1,6 +1,7 @@
 import json
 from configparser import ConfigParser
 import os
+import datetime
 
 
 def format_json(data):
@@ -25,3 +26,10 @@ def read_config():
             config[section][item[0]] = item[1]
     # print(config)
     return config
+
+
+def lt_time(time1, time2):
+    time1 = datetime.datetime.strptime(time1, "%Y-%m-%dT%H:%M:%SZ")
+    time2 = datetime.datetime.strptime(time2, "%Y-%m-%dT%H:%M:%SZ")
+
+    return time1.__lt__(time2)

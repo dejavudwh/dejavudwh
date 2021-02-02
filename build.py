@@ -1,7 +1,6 @@
 import requests
 import json
 import utils
-import datetime
 
 
 CONFIG = {}
@@ -41,6 +40,6 @@ if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
     # print(CONFIG)
-    fg = FetchGithub()
-    fg.fetch_commits()
-    # print(datetime.datetime(2021, 4, 1, 12,32,12).__gt__(datetime.datetime(2021, 4, 1, 12,22,12)))
+    # fg = FetchGithub()
+    # fg.fetch_commits()
+    print(utils.lt_time('2019-09-24T08:23:04Z', '2019-09-23T07:29:16Z'))
