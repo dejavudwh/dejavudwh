@@ -33,16 +33,16 @@
     <tr>
     <td>
     <!-- COMMITS-LIST:START -->
-    
-    * [updat workflow](https://github.com/dejavudwh/dejavudwh/commit/5ef0b593e9e96c65ce78c191fa67bc11880b2fc7) -repo: dejavudwh 2021-02-02T13:38:02Z
 
-    * [update workflow](https://github.com/dejavudwh/dejavudwh/commit/0e3ab0ae98ec6fc5a0a9534621dbf505ecb99dcb) -repo: dejavudwh 2021-02-02T13:42:24Z
+    - Commit: [fix workflow bug](https://github.com/dejavudwh/dejavudwh/commit/714e25f451d3e06ad4652fb6e8ae91db5b073440) -repo: dejavudwh 2021-02-02T14:04:24Z
 
-    * [fix workflow bug](https://github.com/dejavudwh/dejavudwh/commit/714e25f451d3e06ad4652fb6e8ae91db5b073440) -repo: dejavudwh 2021-02-02T14:04:24Z
+    - Commit: [updated requirements](https://github.com/dejavudwh/dejavudwh/commit/51741e173e2de71d231f183e550978b18abfe933) -repo: dejavudwh 2021-02-02T14:10:26Z
 
-    * [updated requirements](https://github.com/dejavudwh/dejavudwh/commit/51741e173e2de71d231f183e550978b18abfe933) -repo: dejavudwh 2021-02-02T14:10:26Z
+    - Commit: [fix encode and update workflow](https://github.com/dejavudwh/dejavudwh/commit/603b2f3eba6432a15e71874e843364d1cb6b0dc1) -repo: dejavudwh 2021-02-02T14:16:12Z
 
-    * [fix encode and update workflow](https://github.com/dejavudwh/dejavudwh/commit/603b2f3eba6432a15e71874e843364d1cb6b0dc1) -repo: dejavudwh 2021-02-02T14:16:12Z
+    - Commit: [:memo 自动更新](https://github.com/dejavudwh/dejavudwh/commit/b23b846173cd4853c3e6bbbbe6f0f84bc2aaa98a) -repo: dejavudwh 2021-02-02T14:16:51Z
+
+    - Commit: [update commit post css](https://github.com/dejavudwh/dejavudwh/commit/02c77d8361e69b91c61f330368f11b8caa6ed2d1) -repo: dejavudwh 2021-02-02T14:31:49Z
 
     <!-- COMMITS-LIST:END -->  
     </td>
