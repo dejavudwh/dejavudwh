@@ -19,16 +19,36 @@ def read_config():
 
     sections = cp.sections()
     for section in sections:
+        config[section] = {}
         items = cp.items(section)
         for item in items:
-            config[item[0]] = item[1]
+            config[section][item[0]] = item[1]
 
-    print(config)
-    
+    return config
+
+
+class FetchGithub(object):
+    def __init__(self):
+        self.api = CONFIG.get('github-api')
+        self.username = CONFIG.get('user').get('username')
+
+    def fetch_repos_name(self):
+        url = self.api['prefix'] + self.api['repos'].replace('{user}', self.username)
+        res = requests.get(url)
+        data = json.loads(res.text)
+        format_json(len(data))
+
+    def fetch_commits(self):
+        pass
+
 
 def format_json(data):
     print(json.dumps(data, sort_keys=True, indent=4, separators=(',', ':')))
 
 
 if __name__ == '__main__':
-    read_config()
+    global CONIFG
+    CONFIG = read_config()
+    # print(CONFIG)
+    fg = FetchGithub()
+    fg.fetch_repos_name()
