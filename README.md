@@ -32,7 +32,7 @@
   - 英语
   - 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032)
 
-  <details>
+- <details>
     <summary><font size="3.5" color="#3399FF"><b>Commit Post 🖱️</b></font></summary>
   <!-- COMMITS-LIST:START -->
 
