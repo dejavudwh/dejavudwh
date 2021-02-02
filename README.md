@@ -32,6 +32,16 @@
 
     <!-- COMMITS-LIST:START -->
 
+    - [updat workflow](https://github.com/dejavudwh/dejavudwh/commit/5ef0b593e9e96c65ce78c191fa67bc11880b2fc7) -repo: dejavudwh 2021-02-02T13:38:02Z
+
+    - [update workflow](https://github.com/dejavudwh/dejavudwh/commit/0e3ab0ae98ec6fc5a0a9534621dbf505ecb99dcb) -repo: dejavudwh 2021-02-02T13:42:24Z
+
+    - [fix workflow bug](https://github.com/dejavudwh/dejavudwh/commit/714e25f451d3e06ad4652fb6e8ae91db5b073440) -repo: dejavudwh 2021-02-02T14:04:24Z
+
+    - [updated requirements](https://github.com/dejavudwh/dejavudwh/commit/51741e173e2de71d231f183e550978b18abfe933) -repo: dejavudwh 2021-02-02T14:10:26Z
+
+    - [fix encode and update workflow](https://github.com/dejavudwh/dejavudwh/commit/603b2f3eba6432a15e71874e843364d1cb6b0dc1) -repo: dejavudwh 2021-02-02T14:16:12Z
+
     <!-- COMMITS-LIST:END -->  
 
   </details>
