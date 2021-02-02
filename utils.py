@@ -53,7 +53,6 @@ class MyHeap(object):
             heapq.heappush(self._data, (self.key(item[0]), item[1]))
         else:
             topk_small = list(self._data[0])
-            print(item[0], topk_small[0], item[1], topk_small[1])
             if item[0] > topk_small[0]:  
                 heapq.heapreplace(self._data, (self.key(item[0]), item[1]))
 
@@ -62,3 +61,6 @@ class MyHeap(object):
             return heapq.heappop(self._data)[1]
         else:
             return None
+
+    def get_data(self):
+        return self._data

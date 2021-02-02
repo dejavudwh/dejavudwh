@@ -13,8 +13,8 @@ class FetchGithub(object):
         user = CONFIG.get('user')
         self.username = user.get('username')
         self.count = int(user.get('entry_count'))
-        self.repos = utils.MyHeap(len=5)
-        self.commits = {}
+        self.repos = utils.MyHeap(len=self.count)
+        self.commits = utils.MyHeap(len=self.count)
 
     def fetch_repos_name(self):
         url = self.prefix + self.api['repos'].replace('{user}', self.username)
@@ -22,21 +22,20 @@ class FetchGithub(object):
         data = json.loads(res.text)
         for i in range(len(data)):
             time = utils.githubtime_to_time(data[i]['pushed_at'])
-            # print(data[i]['pushed_at'], time, data[i]['name'])
             utils.MyHeap.push(self.repos, (time, data[i]['name']))
-            print(self.repos._data)
 
     def fetch_commits(self):
         self.fetch_repos_name()
         url = self.prefix + self.api['commits'].replace('{owner}', self.username)
-        for repo in self.repos:
-            res = requests.get(url.replace('{repo}', repo))
+        for repo in self.repos.get_data():
+            res = requests.get(url.replace('{repo}', repo[1]))
             data = json.loads(res.text)
-            # utils.format_json(data[1]['commit'])
-            commit = []
-            for i in range(self.count):
-                commit.append(data[i]['commit'])
-            self.commits[repo] = commit
+            count = self.count if self.count < len(data) else len(data)
+            for i in range(count):
+                commit = data[i]['commit']
+                time = utils.githubtime_to_time(commit['committer']['date'])
+                utils.MyHeap.push(self.commits, (time, (commit['message'], data[i]['html_url'], repo[1])))
+        utils.format_json(self.commits.get_data())
 
 
 if __name__ == '__main__':
@@ -44,6 +43,6 @@ if __name__ == '__main__':
     CONFIG = utils.read_config()
     # print(CONFIG)
     fg = FetchGithub()
-    fg.fetch_repos_name()
-    # fg.fetch_commits()
+    # fg.fetch_repos_name()
+    fg.fetch_commits()
     # print(utils.lt_time('2019-09-24T08:23:04Z', '2019-09-23T07:29:16Z'))
