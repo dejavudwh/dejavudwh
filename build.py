@@ -13,15 +13,18 @@ class FetchGithub(object):
         user = CONFIG.get('user')
         self.username = user.get('username')
         self.count = int(user.get('entry_count'))
-        self.repos = []
+        self.repos = utils.MyHeap(len=5)
         self.commits = {}
 
     def fetch_repos_name(self):
         url = self.prefix + self.api['repos'].replace('{user}', self.username)
         res = requests.get(url)
         data = json.loads(res.text)
-        for i in range(2):
-            self.repos.append(data[i]['name'])
+        for i in range(len(data)):
+            time = utils.githubtime_to_time(data[i]['pushed_at'])
+            # print(data[i]['pushed_at'], time, data[i]['name'])
+            utils.MyHeap.push(self.repos, (time, data[i]['name']))
+            print(self.repos._data)
 
     def fetch_commits(self):
         self.fetch_repos_name()
@@ -40,6 +43,7 @@ if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
     # print(CONFIG)
-    # fg = FetchGithub()
+    fg = FetchGithub()
+    fg.fetch_repos_name()
     # fg.fetch_commits()
-    print(utils.lt_time('2019-09-24T08:23:04Z', '2019-09-23T07:29:16Z'))
+    # print(utils.lt_time('2019-09-24T08:23:04Z', '2019-09-23T07:29:16Z'))

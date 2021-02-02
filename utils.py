@@ -2,6 +2,8 @@ import json
 from configparser import ConfigParser
 import os
 import datetime
+import heapq
+import time
 
 
 def format_json(data):
@@ -28,8 +30,35 @@ def read_config():
     return config
 
 
-def lt_time(time1, time2):
-    time1 = datetime.datetime.strptime(time1, "%Y-%m-%dT%H:%M:%SZ")
-    time2 = datetime.datetime.strptime(time2, "%Y-%m-%dT%H:%M:%SZ")
+def githubtime_to_time(g_time):
+    dt = datetime.datetime.strptime(g_time, "%Y-%m-%dT%H:%M:%SZ")
+    return time.mktime(dt.timetuple())
 
-    return time1.__lt__(time2)
+
+def lt_time(time1, time2):
+    time1 = githubtime_to_time(time1)
+    time2 = githubtime_to_time(time2)
+
+    return time1 - time2
+
+
+class MyHeap(object):
+    def __init__(self, initial=None, key=lambda x : x, len=100):
+        self.k = len      
+        self.key = key
+        self._data = []
+
+    def push(self, item):
+        if len(self._data) < self.k:
+            heapq.heappush(self._data, (self.key(item[0]), item[1]))
+        else:
+            topk_small = list(self._data[0])
+            print(item[0], topk_small[0], item[1], topk_small[1])
+            if item[0] > topk_small[0]:  
+                heapq.heapreplace(self._data, (self.key(item[0]), item[1]))
+
+    def pop(self):
+        if(len(self._data) > 1):
+            return heapq.heappop(self._data)[1]
+        else:
+            return None
