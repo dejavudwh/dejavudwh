@@ -1,6 +1,7 @@
 import requests
 import json
 import utils
+import string
 
 
 CONFIG = {}
@@ -33,9 +34,44 @@ class FetchGithub(object):
             count = self.count if self.count < len(data) else len(data)
             for i in range(count):
                 commit = data[i]['commit']
-                time = utils.githubtime_to_time(commit['committer']['date'])
-                utils.MyHeap.push(self.commits, (time, (commit['message'], data[i]['html_url'], repo[1])))
+                date = commit['committer']['date']
+                time = utils.githubtime_to_time(date)
+                utils.MyHeap.push(self.commits, (time, (commit['message'], data[i]['html_url'], repo[1], date)))
         utils.format_json(self.commits.get_data())
+
+
+def generate_string(items):
+    template = string.Template('- [${message}](${url}) -repo: ${name} ${date}')
+    s = ''
+    for item in items:
+        s += '\n'
+        s += template.substitute(message=item[1][0], url=item[1][1], name=item[1][2], date=item[1][3])
+        s += '\n'
+    return s
+
+
+def update_readme(template):
+    lines = []
+    rows = 0
+    flag = False
+    is_old = False
+    with open('README.md', 'r', encoding='UTF-8') as f:
+        for line in f:
+            if not is_old:
+                lines.append(line)
+            if not flag:
+                rows = rows + 1
+            if 'COMMITS-LIST:START' in line:
+                flag = True
+                is_old = True
+            elif 'COMMITS-LIST:END' in line:
+                lines.append('\n' + line)
+                is_old = False
+    lines.insert(rows, template)      
+    content = ''.join(lines)
+    file = open('README.md', 'w', encoding='UTF-8')
+    file.write(content)
+    file.close()
 
 
 if __name__ == '__main__':
@@ -45,4 +81,5 @@ if __name__ == '__main__':
     fg = FetchGithub()
     # fg.fetch_repos_name()
     fg.fetch_commits()
-    # print(utils.lt_time('2019-09-24T08:23:04Z', '2019-09-23T07:29:16Z'))
+    new_readme = generate_string(fg.commits.get_data())
+    update_readme(new_readme)
