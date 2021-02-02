@@ -23,5 +23,5 @@ def read_config():
         items = cp.items(section)
         for item in items:
             config[section][item[0]] = item[1]
-
+    # print(config)
     return config
