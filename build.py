@@ -41,7 +41,7 @@ class FetchGithub(object):
 
 
 def generate_string(items):
-    template = string.Template('    - [${message}](${url}) -repo: ${name} ${date}')
+    template = string.Template('    - Commit: [${message}](${url}) -repo: ${name} ${date}')
     s = ''
     for item in items:
         s += '\n'
