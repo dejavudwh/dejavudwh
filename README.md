@@ -10,10 +10,11 @@
 
 > Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine
 
+*最近状态由Python脚本自动更新，详见<a href="https://github.com/dejavudwh/dejavudwh"> repo</a>*
 
 <details>
 
-  <summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️(Click: 最近状态由Python脚本自动更新，详见<a href="https://github.com/dejavudwh/dejavudwh"> repo</a>)</b></font></summary>
+  <summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️(Click:)</b></font></summary>
 
   - #### 🔭 Working:
 
@@ -35,22 +36,14 @@
     <table>
     <tr>
     <td>
-    <!-- GITHUB:START -->
-
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/87ac55e91f...c9bab6b3c2) - 2021-02-03T12:39:11Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/6110b98cec...46327e741a) - 2021-02-03T12:23:26Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/d979983bd2...6110b98cec) - 2021-02-03T12:21:26Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/12600240ea...d979983bd2) - 2021-02-03T12:18:56Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/424ca24905...d979983bd2) - 2021-02-03T12:13:25Z
-    <!-- GITHUB:END -->
-    <td>
     <!-- ZHIHUPOSTS:START --> 
 
-    - [从零实现正则表达式引擎：从NFA到DFA](http://zhuanlan.zhihu.com/p/348298134) - Mon, 19 Jan 1970 15:47:45 GMT
-    - [从零实现正则表达式引擎：复杂的NFA](http://zhuanlan.zhihu.com/p/347938422) - Mon, 19 Jan 1970 15:45:04 GMT
-    - [从零实现正则表达式引擎：简单的NFA](http://zhuanlan.zhihu.com/p/347617984) - Mon, 19 Jan 1970 15:43:23 GMT
-    - [从零实现一个正则表达式引擎：入门](http://zhuanlan.zhihu.com/p/347266654) - Mon, 19 Jan 1970 15:41:13 GMT
     <!-- ZHIHUPOSTS:END -->
+    </td>
+    <td>
+    <!-- GITHUB:START -->
+
+    <!-- GITHUB:END -->
     </td>
     </tr>
     </table>

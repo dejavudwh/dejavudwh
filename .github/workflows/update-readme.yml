@@ -1,6 +1,11 @@
 name: update-readme
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron:  '0 8 * * *'
 
 jobs:
   build:
