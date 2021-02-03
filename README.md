@@ -13,7 +13,7 @@
 
 <details>
 
-  <summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️</b></font></summary>
+  <summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️(Click: 最近状态由Python脚本自动更新，详见<a href="https://github.com/dejavudwh/dejavudwh"> repo</a>)</b></font></summary>
 
   - #### 🔭 Working:
 
@@ -26,9 +26,12 @@
     - 英语
     - 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032)
 
-  - <details>
+---
 
-    <summary><font size="3.5" color="#3399FF"><b>Commit Post 🖱️</b></font></summary>
+  - <details open>
+
+    <summary><font size="3.5" color="#3399FF"><b>Recent Post 🖱️</b></font></summary>
+    <br>
     <table>
     <tr>
     <td>
