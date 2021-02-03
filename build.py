@@ -7,17 +7,29 @@ CONFIG = {}
 def fetch_feedlist():
     # Gets all feeds set by the user then fetch feed
     feedlist = CONFIG['user']['feedList']
+    # feed formatting information 
+    feeds = {}
     for feed in feedlist:
         if not feed['disable']:
-            fetch_feed(feed['feedName'])
+            feeds[feed['feedName']] = fetch_feed(feed)
+
+    return feeds
 
 
-def fetch_feed(feedName):
-    url = get_feed_url(feedName)
-    print(url)
-    # entries = feedparser.parse(url)["entries"]
-    # utils.format_json(entries[0])
-
+def fetch_feed(feed):
+    url = get_feed_url(feed['feedName'])
+    count = feed['entryCount']
+    entries = feedparser.parse(url)["entries"]
+    count = count if count < len(entries) else len(entries)
+    return [
+        {
+            "title": entries[i]["title"],
+            "url": entries[i]["link"].split("#")[0],
+            "published": entries[i]["published"],
+        }
+        for i in range(count)
+    ]
+    
 
 def get_feed_url(feedName):
     user = CONFIG['user']
@@ -66,4 +78,5 @@ if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
     # fetch_feed('https://github.com/dejavudwh.atom')
-    fetch_feedlist()
+    feeds = fetch_feedlist()
+    utils.format_json(feeds)

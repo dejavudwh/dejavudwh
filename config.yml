@@ -11,13 +11,16 @@ user:
     # default feed
     - feedName: githubActivitiesFeed
       disable: False
+      entryCount: 5
         
     - feedName: zhihuPostsFeed
       disable: True
+      entryCount: 5
 
     # user feed
     - feedName:
       disable: True
+      entryCount: 5
 
 
 feeds:
@@ -27,7 +30,6 @@ feeds:
     _class: github
     url: https://github.com/{id}.atom
     params: [id]
-    count: 5
     style: '- [{title}]({url}) - {date}'
     tagStartName: GITHUB:START
     tagEndName: GITHUB:END 
@@ -36,7 +38,6 @@ feeds:
     _class:
     url:
     params:
-    count: 5
     style: 
     tagStartName: ZHIHUPOSTS:START
     tagEndName: ZHIHUPOSTS:END 
