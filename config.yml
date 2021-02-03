@@ -18,7 +18,7 @@ user:
       entryCount: 5
 
     # user feed
-    - feedName:
+    - feedName: BlogFeed
       disable: True
       entryCount: 5
 
@@ -43,8 +43,13 @@ feeds:
     tagEndName: ZHIHUPOSTS:END 
 
   # user feed
-  juejinFeed:
-
+  BlogFeed: 
+    _class:
+    url: https://dejavudwh.cn/atom.xml
+    params: []
+    style: '- [{title}]({url}) - {date}'
+    tagStartName: BLOGPOSTS:START
+    tagEndName: BLOGPOSTS:END 
 
 api:
   # default api

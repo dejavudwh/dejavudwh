@@ -50,33 +50,45 @@ def get_feed_url(feedName):
     return url
 
 
-def update_readme(template):
-    lines = []
+def find_tags(feedNames):
+    # get all tags in readme
+    tags = []
+    for feedName in feedNames:
+        feed = CONFIG['feeds'][feedName]
+        tag = (feedName, feed['tagStartName'], feed['tagEndName'])
+        tags.append(tag)
+    
+    return tags
+    
+
+def update_readme(feedNames):
+    tags = find_tags(feedNames)
+    posMap = {}
     rows = 0
-    flag = False
-    is_old = False
+    lines = []
+    # location within the tag that needs to be updated
+    needUpdate = False
     with open('README.md', 'r', encoding='UTF-8') as f:
+        # Read the file and skip the locations that need to be updated
         for line in f:
-            if not is_old:
-                lines.append(line)
-            if not flag:
+            if not needUpdate:
+                lines.append(lines)
                 rows = rows + 1
-            if 'COMMITS-LIST:START' in line:
-                flag = True
-                is_old = True
-            elif 'COMMITS-LIST:END' in line:
-                lines.append('\n' + line)
-                is_old = False
-    lines.insert(rows, template)      
-    content = ''.join(lines)
-    file = open('README.md', 'w', encoding='UTF-8')
-    file.write(content)
-    file.close()
+            for tag in tags:
+                print(tag, line)
+                if tag[1] in line:
+                    posMap[tag[0]] = rows
+                    needUpdate = True
+                elif tag[2] in line:
+                    rows = rows + 1
+                    needUpdate = False
+    print(posMap)
 
 
 if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
     # fetch_feed('https://github.com/dejavudwh.atom')
-    feeds = fetch_feedlist()
-    utils.format_json(feeds)
+    # feeds = fetch_feedlist()
+    # utils.format_json(feeds)
+    # insert(['githubActivitiesFeed', 'BlogFeed'])

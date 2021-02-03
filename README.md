@@ -32,7 +32,7 @@
     <table>
     <tr>
     <td>
-    <!-- COMMITS-LIST:START -->
+    <!-- GITHUB:START -->
 
     - Commit: [updated requirements](https://github.com/dejavudwh/dejavudwh/commit/51741e173e2de71d231f183e550978b18abfe933) -repo: dejavudwh 2021-02-02T14:10:26Z
 
@@ -44,8 +44,10 @@
 
     - Commit: [:memo 自动更新](https://github.com/dejavudwh/dejavudwh/commit/1b9100ff517f32fcc754287ca0e75295717cb051) -repo: dejavudwh 2021-02-02T14:32:35Z
 
-    <!-- COMMITS-LIST:END -->  
+    <!-- GITHUB:END --> 
     </td>
+    <!-- BLOGPOSTS:START --> 
+    <!-- BLOGPOSTS:END -->
     </tr>
     </table>
   </details>
