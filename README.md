@@ -37,11 +37,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/1a6bf0c044...1736abb950) - 2021-02-03T12:50:18Z
+    - [dejavudwh created a tag 1.0 in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/tree/1.0) - 2021-02-03T12:43:07Z
+    - [dejavudwh released Profile automatic updater at dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/releases/tag/1.0) - 2021-02-03T12:43:07Z
     - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/87ac55e91f...c9bab6b3c2) - 2021-02-03T12:39:11Z
     - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/6110b98cec...46327e741a) - 2021-02-03T12:23:26Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/d979983bd2...6110b98cec) - 2021-02-03T12:21:26Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/12600240ea...d979983bd2) - 2021-02-03T12:18:56Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/424ca24905...d979983bd2) - 2021-02-03T12:13:25Z
     <!-- GITHUB:END -->
     <td>
     <!-- ZHIHUPOSTS:START --> 
