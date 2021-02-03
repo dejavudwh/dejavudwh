@@ -34,18 +34,12 @@
     <td>
     <!-- GITHUB:START -->
 
-    - Commit: [updated requirements](https://github.com/dejavudwh/dejavudwh/commit/51741e173e2de71d231f183e550978b18abfe933) -repo: dejavudwh 2021-02-02T14:10:26Z
-
-    - Commit: [fix encode and update workflow](https://github.com/dejavudwh/dejavudwh/commit/603b2f3eba6432a15e71874e843364d1cb6b0dc1) -repo: dejavudwh 2021-02-02T14:16:12Z
-
-    - Commit: [:memo 自动更新](https://github.com/dejavudwh/dejavudwh/commit/b23b846173cd4853c3e6bbbbe6f0f84bc2aaa98a) -repo: dejavudwh 2021-02-02T14:16:51Z
-
-    - Commit: [update commit post css](https://github.com/dejavudwh/dejavudwh/commit/02c77d8361e69b91c61f330368f11b8caa6ed2d1) -repo: dejavudwh 2021-02-02T14:31:49Z
-
-    - Commit: [:memo 自动更新](https://github.com/dejavudwh/dejavudwh/commit/1b9100ff517f32fcc754287ca0e75295717cb051) -repo: dejavudwh 2021-02-02T14:32:35Z
-
-    <!-- GITHUB:END --> 
-    </td>
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/dee382d120...8c879e4df6) - 2021-02-03T09:08:21Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/681ab97cbb...dee382d120) - 2021-02-03T08:41:00Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/91bc2d776f...681ab97cbb) - 2021-02-03T07:28:23Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/7b3c833d9b...91bc2d776f) - 2021-02-03T07:06:48Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/36301456c3...7b3c833d9b) - 2021-02-03T06:17:52Z
+    <!-- GITHUB:END -->
     <!-- BLOGPOSTS:START --> 
     <!-- BLOGPOSTS:END -->
     </tr>

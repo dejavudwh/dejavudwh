@@ -57,9 +57,8 @@ def generate_readme(feeds):
         template = CONFIG['feeds'][key]['style']
         contents = ''
         for v in value:
-            print(1)
             s = template.replace('{title}', v['title']).replace('{url}', v['url']).replace('{date}', v['published'])
-            contents += (s + '\n')
+            contents += ('\n' + s)
         contentsMap[key] = contents
         
     return contentsMap
@@ -76,7 +75,10 @@ def find_tags(feedNames):
     return tags
     
 
-def update_readme(feedNames):
+def update_readme(contentsMap):
+    feedNames = []
+    for key in contentsMap:
+        feedNames.append(key)
     tags = find_tags(feedNames)
     posMap = {}
     rows = 0
@@ -87,17 +89,29 @@ def update_readme(feedNames):
         # Read the file and skip the locations that need to be updated
         for line in f:
             if not needUpdate:
-                lines.append(lines)
+                lines.append(line)
                 rows = rows + 1
             for tag in tags:
-                print(tag, line)
+                # print(tag, line)
                 if tag[1] in line:
                     posMap[tag[0]] = rows
                     needUpdate = True
                 elif tag[2] in line:
                     rows = rows + 1
+                    lines.append(line)
                     needUpdate = False
-    print(posMap)
+    # insert
+    i = 0
+    for key, value in contentsMap.items():
+        pos = posMap[key]
+        # print(key, value)
+        lines.insert(pos + i, value + '\n')    
+        i = i + 1  
+    
+    content = ''.join(lines)
+    file = open('README.md', 'w', encoding='UTF-8')
+    file.write(content)
+    file.close()
 
 
 if __name__ == '__main__':
@@ -106,7 +120,7 @@ if __name__ == '__main__':
     # fetch_feed('https://github.com/dejavudwh.atom')
     feeds = fetch_feedlist()
     # utils.format_json(feeds)
-    print(feeds)
+    # print(feeds)
     contentsMap = generate_readme(feeds)
-    print(contentsMap)
-    # insert(['githubActivitiesFeed', 'BlogFeed'])
+    # print(contentsMap)
+    update_readme(contentsMap)

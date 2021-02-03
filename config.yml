@@ -19,7 +19,7 @@ user:
 
     # user feed
     - feedName: BlogFeed
-      disable: True
+      disable: False
       entryCount: 5
 
 
@@ -30,7 +30,7 @@ feeds:
     _class: github
     url: https://github.com/{id}.atom
     params: [id]
-    style: '- [{title}]({url}) - {date}'
+    style: '    - [{title}]({url}) - {date}'
     tagStartName: GITHUB:START
     tagEndName: GITHUB:END 
 
