@@ -23,9 +23,9 @@ def fetch_feed(feed):
     count = count if count < len(entries) else len(entries)
     return [
         {
-            "title": entries[i]["title"],
-            "url": entries[i]["link"].split("#")[0],
-            "published": entries[i]["published"],
+            'title': entries[i]["title"],
+            'url': entries[i]["link"].split("#")[0],
+            'published': entries[i]["published"],
         }
         for i in range(count)
     ]
@@ -48,6 +48,21 @@ def get_feed_url(feedName):
         url = url.replace('{' + key + '}', str(value))
     
     return url
+
+
+def generate_readme(feeds):
+    # Generates the string to be inserted 
+    contentsMap = {}
+    for key, value in feeds.items():
+        template = CONFIG['feeds'][key]['style']
+        contents = ''
+        for v in value:
+            print(1)
+            s = template.replace('{title}', v['title']).replace('{url}', v['url']).replace('{date}', v['published'])
+            contents += (s + '\n')
+        contentsMap[key] = contents
+        
+    return contentsMap
 
 
 def find_tags(feedNames):
@@ -89,6 +104,9 @@ if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
     # fetch_feed('https://github.com/dejavudwh.atom')
-    # feeds = fetch_feedlist()
+    feeds = fetch_feedlist()
     # utils.format_json(feeds)
+    print(feeds)
+    contentsMap = generate_readme(feeds)
+    print(contentsMap)
     # insert(['githubActivitiesFeed', 'BlogFeed'])
