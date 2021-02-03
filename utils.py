@@ -17,8 +17,8 @@ def read_config():
         raise FileNotFoundError("configuration file does not exist")
     
     fs = open(file_path, encoding="UTF-8")
-    config = yaml.load(fs,)
-    format_json(config)
+    config = yaml.load(fs, Loader=yaml.SafeLoader)
+    # format_json(config)
 
     return config
 

@@ -1,8 +1,42 @@
 import utils
-import string
-
+import feedparser
 
 CONFIG = {}
+
+
+def fetch_feedlist():
+    # Gets all feeds set by the user then fetch feed
+    feedlist = CONFIG['user']['feedList']
+    for feed in feedlist:
+        if not feed['disable']:
+            fetch_feed(feed['feedName'])
+
+
+def fetch_feed(feedName):
+    url = get_feed_url(feedName)
+    print(url)
+    # entries = feedparser.parse(url)["entries"]
+    # utils.format_json(entries[0])
+
+
+def get_feed_url(feedName):
+    user = CONFIG['user']
+    # get feed
+    feeds = CONFIG['feeds']
+    feed = feeds[feedName]
+    # get url params
+    _class = feed['_class']
+    params = {}
+    for param in feed['params']:
+        params[param] = user['params'][_class][param]
+        # print(params)
+    # gen url
+    url = feed['url']
+    for key, value in params.items():
+        url = url.replace('{' + key + '}', str(value))
+    
+    return url
+
 
 def update_readme(template):
     lines = []
@@ -31,3 +65,5 @@ def update_readme(template):
 if __name__ == '__main__':
     global CONIFG
     CONFIG = utils.read_config()
+    # fetch_feed('https://github.com/dejavudwh.atom')
+    fetch_feedlist()

@@ -2,50 +2,48 @@
 user:
   params:
     # _class: github, id is the parameter that's going to be used in the URL
-    - github:
-        id: dejavudwh
-    - zhihu:
-        id: shadow-61-66
+    github:
+      id: dejavudwh
+    zhihu:
+      id: shadow-61-66
 
   feedList:
     # default feed
-    - githubActivities:
+    - feedName: githubActivitiesFeed
       disable: False
-      feedName: githubFeed
-
-    - zhihuPosts:
-      disable: False
-      feedName: zhihuPostsFeed
+        
+    - feedName: zhihuPostsFeed
+      disable: True
 
     # user feed
-    - juejin:
-        disable: True
-        url:
-        count:
+    - feedName:
+      disable: True
+
 
 feeds:
   # default feed
   # three messages of the feed: title, url, date
-  - githubFeed:
-      _class: github
-      url: https://github.com/{github_id}.atom
-      params: [id]
-      count: 5
-      style: '- [{title}]({url}) - {date}'
-      tagStartName: GITHUB:START
-      tagEndName: GITHUB:END 
+  githubActivitiesFeed:
+    _class: github
+    url: https://github.com/{id}.atom
+    params: [id]
+    count: 5
+    style: '- [{title}]({url}) - {date}'
+    tagStartName: GITHUB:START
+    tagEndName: GITHUB:END 
 
-  - zhihuPostsFeed:
-      _class:
-      url:
-      params:
-      count: 5
-      style: 
-      tagStartName: ZHIHUPOSTS:START
-      tagEndName: ZHIHUPOSTS:END 
+  zhihuPostsFeed:
+    _class:
+    url:
+    params:
+    count: 5
+    style: 
+    tagStartName: ZHIHUPOSTS:START
+    tagEndName: ZHIHUPOSTS:END 
 
   # user feed
-  - juejinFeed:
+  juejinFeed:
+
 
 api:
   # default api
