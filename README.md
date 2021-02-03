@@ -34,14 +34,19 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/dee382d120...8c879e4df6) - 2021-02-03T09:08:21Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/681ab97cbb...dee382d120) - 2021-02-03T08:41:00Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/91bc2d776f...681ab97cbb) - 2021-02-03T07:28:23Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/7b3c833d9b...91bc2d776f) - 2021-02-03T07:06:48Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/36301456c3...7b3c833d9b) - 2021-02-03T06:17:52Z
+    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/6110b98cec...46327e741a) - 2021-02-03T12:23:26Z
+    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/d979983bd2...6110b98cec) - 2021-02-03T12:21:26Z
+    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/12600240ea...d979983bd2) - 2021-02-03T12:18:56Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/424ca24905...d979983bd2) - 2021-02-03T12:13:25Z
+    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/8c879e4df6...424ca24905) - 2021-02-03T10:03:45Z
     <!-- GITHUB:END -->
     <td>
     <!-- ZHIHUPOSTS:START --> 
+
+    - [从零实现正则表达式引擎：从NFA到DFA](http://zhuanlan.zhihu.com/p/348298134) - Mon, 19 Jan 1970 15:47:45 GMT
+    - [从零实现正则表达式引擎：复杂的NFA](http://zhuanlan.zhihu.com/p/347938422) - Mon, 19 Jan 1970 15:45:04 GMT
+    - [从零实现正则表达式引擎：简单的NFA](http://zhuanlan.zhihu.com/p/347617984) - Mon, 19 Jan 1970 15:43:23 GMT
+    - [从零实现一个正则表达式引擎：入门](http://zhuanlan.zhihu.com/p/347266654) - Mon, 19 Jan 1970 15:41:13 GMT
     <!-- ZHIHUPOSTS:END -->
     </td>
     </tr>
