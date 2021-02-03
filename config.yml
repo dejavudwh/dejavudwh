@@ -1,0 +1,15 @@
+github-api:
+  prefix: https://api.github.com
+  repos: /users/{user}/repos
+  commits: /repos/{owner}/{repo}/commits
+
+zhihu-api:
+  prefix: https://www.zhihu.com/people
+  home: /{zhihu_id}
+  posts: /{zhihu_id}/posts
+
+user:
+  username: dejavudwh
+  zhihu_id: shadow-61-66
+  zhihu_count: 5
+  entry_count: 5

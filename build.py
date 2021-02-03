@@ -37,7 +37,6 @@ class FetchGithub(object):
                 date = commit['committer']['date']
                 time = utils.githubtime_to_time(date)
                 utils.MyHeap.push(self.commits, (time, (commit['message'], data[i]['html_url'], repo[1], date)))
-        # utils.format_json(self.commits.get_data())
 
 
 def generate_string(items):

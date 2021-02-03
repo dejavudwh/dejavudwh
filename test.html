@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" 
+
+> 
+<channel> 
+<title><![CDATA[dejavudwh的知乎文章]]></title> 
+<link>https://www.zhihu.com/people/shadow-61-66/posts</link> 
+<atom:link href="http://rsshub.app/zhihu/posts/people/shadow-61-66" rel="self" type="application/rss+xml" /> 
+<description><![CDATA[学生 - Made with love by RSSHub(https://github.com/DIYgod/RSSHub)]]></description> 
+<generator>RSSHub</generator> 
+<webMaster>i@diygod.me (DIYgod)</webMaster> 
+
+
+
+<language>zh-cn</language> 
+
+<lastBuildDate>Wed, 03 Feb 2021 02:48:08 GMT</lastBuildDate> 
+<ttl>60</ttl> 
+
+<item> 
+<title><![CDATA[从零实现正则表达式引擎：从NFA到DFA]]></title> 
+<description><![CDATA[<blockquote><b>完整代码 ：<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/Regex" class=" wrap external" target="_blank" rel="nofollow noreferrer">Regex in Python</a></b></blockquote><p>这节主要讲通过根据之前构造的NFA来匹配字符串和更进一步：如何把NFA转换为DFA</p><h2>匹配输入字符串</h2><p>我们先开看一下使用NFA来匹配字符串需要两个关键操作：</p><ul><li>closure</li><li>move</li></ul><p>我们通过一个例子来理解一下这两个函数的作用</p><figure data-size="normal"><noscript><img src="https://pic3.zhimg.com/v2-96ab25ceb0085c6712395381917b1b3e_b.jpg" data-caption="" data-size="normal" data-rawwidth="826" data-rawheight="414" class="origin_image zh-lightbox-thumb" width="826" data-original="https://pic3.zhimg.com/v2-96ab25ceb0085c6712395381917b1b3e_r.jpg"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='826' height='414'></svg>" data-caption data-size="normal" data-rawwidth="826" data-rawheight="414" class="origin_image zh-lightbox-thumb lazy" width="826" data-original="https://pic3.zhimg.com/v2-96ab25ceb0085c6712395381917b1b3e_r.jpg" data-actualsrc="https://pic3.zhimg.com/v2-96ab25ceb0085c6712395381917b1b3e_b.jpg" referrerpolicy="no-referrer"></figure><p>以刚刚的图作为演示，假设0-1节点的边是字符集0-9，4-5节点的边是字符集a-z，其它都是空</p><p>所以这个图表示的正则表达式<code>[0-9]*|[a-z]+</code></p><p>假设对于分析字符串123a</p><p>现在8节点是起始节点，当前的字符是1</p><p>这时候的操作自然就是找到任何当前字符1可以到达的节点了，我们可以把它划分为两个操作，也就是上面的closure和move。</p><ul><li>closure</li></ul><p>从开始节点8进行分析，我们要做的第一个操作就是算出在节点8时不需要任何输入就可以到达的节点，这个操作称为closure，得到closure集合{2 ，6，3，9}</p><ul><li>move</li></ul><p>之后我们就需要根据NFA和当前的输入字符来进行节点间的跳转，得到的自然也是一个集合{3}</p><p>这两个操作非常容易理解，下面来用代码实现。</p><h2>closure操作</h2><p>我们利用一个栈来实现closure操作</p><ul><li>把传入集合里的所有节点压入栈中</li><li>然后对这个栈的所有节点进行判断是否有可以直接跳转的节点</li><li>如果有的话直接压入栈中</li><li>直到栈为空则结束操作</li></ul><div class="highlight"><pre><code class="language-text">def closure(input_set): 
+if len(input_set) <= 0: 
+return None 
+
+nfa_stack = [] 
+for i in input_set: 
+nfa_stack.append(i) 
+
+while len(nfa_stack) > 0: 
+nfa = nfa_stack.pop() 
+next1 = nfa.next_1 
+next2 = nfa.next_2 
+if next1 is not None and nfa.edge == EPSILON: 
+if next1 not in input_set: 
+input_set.append(next1) 
+nfa_stack.append(next1) 
+
+if next2 is not None and nfa.edge == EPSILON: 
+if next2 not in input_set: 
+input_set.append(next2) 
+nfa_stack.append(next2) 
+
+return input_set</code></pre></div><h2>move操作</h2><ul><li>move操作就是遍历当前的状态节点集合，如果符合的edge的条件的话</li><li>就加入到下一个状态集合中</li></ul><div class="highlight"><pre><code class="language-text">def move(input_set, ch): 
+out_set = [] 
+for nfa in input_set: 
+if nfa.edge == ch or (nfa.edge == CCL and ch in nfa.input_set): 
+out_set.append(nfa.next_1) 
+
+return out_set</code></pre></div><h2>match</h2><p>现在最后一步就是根据上面的两个操作进行字符串的分析了</p><ul><li>首先先计算出开始节点的closure集合</li><li>开始遍历输入的字符串，从刚刚的closure集合开始做move操作</li><li>然后判断当前的集合是不是可以作为接收状态，只要当前集合有某个状态节点没有连接到其它节点，它就是一个可接收的状态节点，能被当前NFA接收还需要一个条件就是当前字符已经全匹配完了</li></ul><p>到目前为止，其实一个完整的正则表达式引擎已经完成了，但是如果想更近一步的话，还需要将NFA转换成DFA，再进行DFA的最小化</p><h2>NFA转化为DFA</h2><p>DFA我们在<a href="ttps://zhuanlan.zhihu.com/p/347266654" class="internal">第一篇文章</a>已经讲过了，我们直接就来看一下DFA节点的定义。</p><h2>DFA的定义</h2><p>对于NFA转换为DFA的算法，主要就是将NFA中可以状态节点进行合并，进而让状态节点对于一个输入字符都有唯一的一个跳转节点</p><p>所以对于DFA的节点就只需要含有一个nfa状态节点的集合和一个唯一的标识和对是否是接收状态的flag</p><div class="highlight"><pre><code class="language-text">class Dfa(object): 
+STATUS_NUM = 0 
+
+def __init__(self): 
+self.nfa_sets = [] 
+self.accepted = False 
+self.status_num = -1 
+
+@classmethod 
+def nfas_to_dfa(cls, nfas): 
+dfa = cls() 
+for n in nfas: 
+dfa.nfa_sets.append(n) 
+if n.next_1 is None and n.next_2 is None: 
+dfa.accepted = True 
+
+dfa.status_num = Dfa.STATUS_NUM 
+Dfa.STATUS_NUM = Dfa.STATUS_NUM + 1 
+return dfa</code></pre></div><h2>NFA转换为DFA</h2><p>将NFA转换为DFA的最终目标是获得一张跳转表，这个和之前C语言编译的语法分析表有点像</p><p>这个函数就是NFA转换为DFA的全部算法了，主要逻辑就是：</p><ul><li>先利用之前的closure算法，计算出可以合并的NFA节点，然后生成一个DFA的节点</li><li>然后对这个DFA中的NFA集合进行遍历</li><li>之后对于每个输入字符进行move操作，然后对得到的move集合再进行一次closure操作，这样就可以得到下一个DFA状态节点（这里还要进行一个判重的操作，就是可能当前DFA状态节点可能已经生成过了）</li><li>然后将这两个节点的对应关系放入跳转表中</li><li>这时候的DFA如果其中含有的NFA存在一个可接收的状态节点，那么当前的DFA的当然也是可接受状态了</li></ul><div class="highlight"><pre><code class="language-text">// 1. 先对开始节点进行closure操作，并且转化为DFA节点 
+// 2. 遍历所有DFA节点 
+//2.1 对当前的DFA节点中的NFA节点集合对所有字符做move操作 
+// 2.2 对做完move得到的NFA节点进行closure操作 
+//2.3 判重 
+// 2.4 设置跳转表 
+def convert_to_dfa(nfa_start_node): 
+jump_table = list_dict(MAX_DFA_STATUS_NUM) 
+ns = [nfa_start_node] 
+n_closure = closure(ns) 
+dfa = Dfa.nfas_to_dfa(n_closure) 
+dfa_list.append(dfa) 
+
+dfa_index = 0 
+while dfa_index < len(dfa_list): 
+dfa = dfa_list[dfa_index] 
+for i in range(ASCII_COUNT): 
+c = chr(i) 
+nfa_move = move(dfa.nfa_sets, c) 
+if nfa_move is not None: 
+nfa_closure = closure(nfa_move) 
+if nfa_closure is None: 
+continue 
+new_dfa = convert_completed(dfa_list, nfa_closure) 
+if new_dfa is None: 
+new_dfa = Dfa.nfas_to_dfa(nfa_closure) 
+dfa_list.append(new_dfa) 
+next_state = new_dfa.status_num 
+jump_table[dfa.status_num][c] = next_state 
+if new_dfa.accepted: 
+jump_table[new_dfa.status_num]['accepted'] = True 
+dfa_index = dfa_index + 1 
+
+return jump_table</code></pre></div><h2>小结</h2><p>这篇主要讲了怎么根据构造的NFA来识别字符串并且准备进一步的进行优化，也就是把NFA转化为DFA，当然DFA的最小化还没有写，下一篇就可以正式完结这个系列了。</p>]]></description> 
+<pubDate>Mon, 19 Jan 1970 15:47:45 GMT</pubDate> 
+<guid isPermaLink="false">http://zhuanlan.zhihu.com/p/348298134</guid> 
+<link>http://zhuanlan.zhihu.com/p/348298134</link> 
+
+
+
+
+
+
+
+
+</item> 
+
+<item> 
+<title><![CDATA[从零实现正则表达式引擎：复杂的NFA]]></title> 
+<description><![CDATA[<blockquote><b>完整代码 ：<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/Regex" class=" wrap external" target="_blank" rel="nofollow noreferrer">Regex in Python</a></b></blockquote><h2>上节回顾</h2><p>上一节我们完成了简单的NFA构造，也就是四种基本形式，我们可以把它叫做一个<code>term</code>。</p><div class="highlight"><pre><code class="language-text">def term(pair_out): 
+if lexer.match(Token.L): 
+nfa_single_char(pair_out) 
+elif lexer.match(Token.ANY): 
+nfa_dot_char(pair_out) 
+elif lexer.match(Token.CCL_START): 
+nfa_set_nega_char(pair_out)</code></pre></div><p>但是现在只能简单的识别四种简单的形式，并且只能一个识别识别，但是一个一般的正则表达式都是由多个简单的形式组合而成的。下面我们引入一个新东西来表达这种形式。</p><h2>正则表达式的BNF范式</h2><blockquote>巴科斯范式（英语：Backus Normal Form，BNF）是一种用于表示上下文无关文法的语言。</blockquote><p>看一个例子：</p><div class="highlight"><pre><code class="language-text">S –> AB 
+A –> aA | ε 
+B –> b | bB</code></pre></div><p>其中S A B叫作<b>非终结符</b> ，代表可以通过推导产生新的符号，之前在Token类里定义的也有这些非终结符；a b ε叫作<b>终结符</b> ，表示其无法再通过推导产生新的符号了，ε则表示空；</p><p>上面的每一行就是一个产生式规则，也叫推导式，代表了一种非终结符的转移方式；</p><p>S就是开始符号。</p><p>只有终结符的符号串称为<b>句子</b> <i>（sentence）</i> 。</p><p>比如通过这三个产生式，就可以断定bbb符合语法规则。</p><p>而正则表达式的BNF范式是：</p><div class="highlight"><pre><code class="language-text">group ::= ("(" expr ")")* 
+expr ::= factor_conn ("|" factor_conn)* 
+factor_conn ::= factor | factor factor* 
+factor ::= (term | term ("*" | "+" | "?"))* 
+term ::= char | "[" char "-" char "]" | .</code></pre></div><p>term也就是我们之前实现的简单NFA，而这个BNF范式就是我们所要识别的正则语言的规则。而对于这种简单的语法规则，最简单的实现方式就是递归下降。这里其实也就是编译原理的内容，算是降低之后写编译器的学习曲线。</p><h2>自顶向下分析法</h2><blockquote>在语法分析过程中一般有两种语法分析方法，自顶向下和自底向上，递归下降分析和LL(1)都属于是自顶向下的语法分析。这里我们只需要简单的递归下降。</blockquote><p>自顶向下分析法的过程就像从第一个非终结符作为根节点开始根据产生式进行树的构建</p><div class="highlight"><pre><code class="language-text">S -> AB 
+A -> Cb | c 
+B -> f 
+C -> de</code></pre></div><p>对输入字符串<code>debf</code>的分析过程</p><div class="highlight"><pre><code class="language-text">S -> CbB -> debf 
+S -> cf x</code></pre></div><p>整个过程就是对通过非终结符的不断替换，所以当我们从左往右匹配这个句子的时候，需要找到合适的产生式，所以在自顶向下语法分析过程中作出正确的推导有两种方法，一是递归下降，二是表驱动的语法分析，也就是LL(1)</p><h2>递归下降</h2><p>对于递归下降分析，每个非终结符都有一个对应的函数，程序从开始符号的对应函数开始执行，如果程序成功扫描了整个输入字符串，就代表语法分析成功</p><p>在调用非终结符对应的函数时就会遇见两种情况：</p><ul><li>遇到终结符，因为终结符本质上是token，所以直接把这个终结符和句子中对应位置的token进行比较，判断是否符合即可；符合就继续，不符合就返回</li><li>遇到非终结符，此时只需要调用这个非终结符对应的函数即可。在这里函数可能会递归的调用，这也是算法名称的来源。</li></ul><div class="highlight"><pre><code class="language-text">void A() { 
+X1,X2,...Xk = select a production 
+for(i = 1 to k) { 
+if(Xi is a non-terminal) { 
+Xi(); 
+} else if(Is equal to the token) { 
+Read in the next character 
+} else { 
+/* hadnle error */ 
+} 
+} 
+}</code></pre></div><h2>构造复杂的NFA</h2><p>齐活，现在就可以开始动手实现代码了，我们用的是自顶向下的方法，但是为了更好理解，我们先自底向下的讲解代码。</p><h2>factor</h2><blockquote><code>factor ::= (term | term ("*" | "+" | "?"))*</code></blockquote><p>根据上面的<code>factor ::= (term | term ("*" | "+" | "?"))*</code>，先进行 term 的 NFA 的生成，然后根据词法分析器来判断要进行哪个 factor 的 NFA 的构造，也就是有三种闭包：</p><ul><li>*</li><li>+</li><li>？</li></ul><div class="highlight"><pre><code class="language-text">def factor(pair_out): 
+term(pair_out) 
+if lexer.match(Token.CLOSURE): 
+nfa_star_closure(pair_out) 
+elif lexer.match(Token.PLUS_CLOSE): 
+nfa_plus_closure(pair_out) 
+elif lexer.match(Token.OPTIONAL): 
+nfa_option_closure(pair_out)</code></pre></div><h3>nfa_star_closure</h3><figure data-size="normal"><noscript><img src="https://pic1.zhimg.com/v2-03eea1165bd6b0bfd3fef70bf49373f4_b.jpg" data-caption="" data-size="normal" data-rawwidth="300" data-rawheight="108" class="content_image" width="300"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='108'></svg>" data-caption data-size="normal" data-rawwidth="300" data-rawheight="108" class="content_image lazy" width="300" data-actualsrc="https://pic1.zhimg.com/v2-03eea1165bd6b0bfd3fef70bf49373f4_b.jpg" referrerpolicy="no-referrer"></figure><p>有了这个图就很好理解代码了，<code>*</code>闭包就是多增加两个节点，并且连接相应的边。下面的两个也十分类似</p><div class="highlight"><pre><code class="language-text">def nfa_star_closure(pair_out): 
+if not lexer.match(Token.CLOSURE): 
+return False 
+start = Nfa() 
+end = Nfa() 
+start.next_1 = pair_out.start_node 
+start.next_2 = end 
+
+pair_out.end_node.next_1 = pair_out.start_node 
+pair_out.end_node.next_2 = end 
+
+pair_out.start_node = start 
+pair_out.end_node = end 
+
+lexer.advance() 
+return True</code></pre></div><h3>nfa_plus_closure</h3><p>+和*的唯一区别就是必须至少匹配一个字符，所以不能从节点 2 直接跳转到节点 4</p><figure data-size="normal"><noscript><img src="https://pic2.zhimg.com/v2-67553bef40ee44d403e2a46e79c0a331_b.jpg" data-caption="" data-size="normal" data-rawwidth="300" data-rawheight="75" class="content_image" width="300"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='75'></svg>" data-caption data-size="normal" data-rawwidth="300" data-rawheight="75" class="content_image lazy" width="300" data-actualsrc="https://pic2.zhimg.com/v2-67553bef40ee44d403e2a46e79c0a331_b.jpg" referrerpolicy="no-referrer"></figure><div class="highlight"><pre><code class="language-text">def nfa_plus_closure(pair_out): 
+if not lexer.match(Token.PLUS_CLOSE): 
+return False 
+start = Nfa() 
+end = Nfa() 
+start.next_1 = pair_out.start_node 
+
+pair_out.end_node.next_1 = pair_out.start_node 
+pair_out.end_node.next_2 = end 
+
+pair_out.start_node = start 
+pair_out.end_node = end 
+
+lexer.advance() 
+return True</code></pre></div><h3>nfa_option_closure</h3><figure data-size="normal"><noscript><img src="https://pic3.zhimg.com/v2-527268536e7198abb4d4a90a3a190042_b.jpg" data-caption="" data-size="normal" data-rawwidth="300" data-rawheight="106" class="content_image" width="300"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='106'></svg>" data-caption data-size="normal" data-rawwidth="300" data-rawheight="106" class="content_image lazy" width="300" data-actualsrc="https://pic3.zhimg.com/v2-527268536e7198abb4d4a90a3a190042_b.jpg" referrerpolicy="no-referrer"></figure><p>?对应的则是只能输入 0 个或 1 个的匹配字符，所以相对于*就不能再次从节点 1 跳转会节点 0</p><div class="highlight"><pre><code class="language-text">def nfa_option_closure(pair_out): 
+if not lexer.match(Token.OPTIONAL): 
+return False 
+start = Nfa() 
+end = Nfa() 
+
+start.next_1 = pair_out.start_node 
+start.next_2 = end 
+pair_out.end_node.next_1 = end 
+
+pair_out.start_node = start 
+pair_out.end_node = end 
+
+lexer.advance() 
+return True</code></pre></div><h2>factor_conn</h2><blockquote><code>factor_conn ::= factor | factor factor*</code></blockquote><p>factor_conn的语法规则其实和闭包还有点相似，对于 factor_conn 就是一个或者多个 factor 相连接，也就是说如果有多个 factor，只要将它们的头尾节点相连接</p><figure data-size="normal"><noscript><img src="https://pic2.zhimg.com/v2-be67e8963508af6b7f70973e33e4d379_b.jpg" data-caption="" data-size="normal" data-rawwidth="300" data-rawheight="72" class="content_image" width="300"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='72'></svg>" data-caption data-size="normal" data-rawwidth="300" data-rawheight="72" class="content_image lazy" width="300" data-actualsrc="https://pic2.zhimg.com/v2-be67e8963508af6b7f70973e33e4d379_b.jpg" referrerpolicy="no-referrer"></figure><div class="highlight"><pre><code class="language-text">def factor_conn(pair_out): 
+if is_conn(lexer.current_token): 
+factor(pair_out) 
+
+while is_conn(lexer.current_token): 
+pair = NfaPair() 
+factor(pair) 
+pair_out.end_node.next_1 = pair.start_node 
+pair_out.end_node = pair.end_node 
+
+return True</code></pre></div><h2>expr</h2><blockquote><code>expr ::= factor_conn ("|" factor_conn)*</code></blockquote><p>对于 expr 就是一个 factor_conn 或者多个 factor_conn 用 | 相连接。其实只要理解了上面的过程，更多的语言规则不过是对节点的修修改改。</p><figure data-size="normal"><noscript><img src="https://pic2.zhimg.com/v2-14321f88b241386df0938d45b4c09c35_b.jpg" data-caption="" data-size="normal" data-rawwidth="300" data-rawheight="142" class="content_image" width="300"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='142'></svg>" data-caption data-size="normal" data-rawwidth="300" data-rawheight="142" class="content_image lazy" width="300" data-actualsrc="https://pic2.zhimg.com/v2-14321f88b241386df0938d45b4c09c35_b.jpg" referrerpolicy="no-referrer"></figure><p>构建|的 NFA 就是生成两个新节点，新生成的头节点有两条边分别连接到 factor_conn 的头节点，对于两个 factor_conn 的尾节点分别生成一条边连接到新生成的尾节点</p><div class="highlight"><pre><code class="language-text">def expr(pair_out): 
+factor_conn(pair_out) 
+pair = NfaPair() 
+
+while lexer.match(Token.OR): 
+lexer.advance() 
+factor_conn(pair) 
+start = Nfa() 
+start.next_1 = pair.start_node 
+start.next_2 = pair_out.start_node 
+pair_out.start_node = start 
+
+end = Nfa() 
+pair.end_node.next_1 = end 
+pair_out.end_node.next_2 = end 
+pair_out.end_node = end 
+
+return True</code></pre></div><h2>group</h2><blockquote><code>group ::= ("(" expr ")")*</code></blockquote><p>这里的group其实只做了简单的实现，所以只是在expr的基础上加上了两个括号。而While循环就是用来解析多个group的。</p><div class="highlight"><pre><code class="language-text">def group(pair_out): 
+if lexer.match(Token.OPEN_PAREN): 
+lexer.advance() 
+expr(pair_out) 
+if lexer.match(Token.CLOSE_PAREN): 
+lexer.advance() 
+elif lexer.match(Token.EOS): 
+return False 
+else: 
+expr(pair_out) 
+
+while True: 
+pair = NfaPair() 
+if lexer.match(Token.OPEN_PAREN): 
+lexer.advance() 
+expr(pair) 
+pair_out.end_node.next_1 = pair.start_node 
+pair_out.end_node = pair.end_node 
+if lexer.match(Token.CLOSE_PAREN): 
+lexer.advance() 
+elif lexer.match(Token.EOS): 
+return False 
+else: 
+expr(pair) 
+pair_out.end_node.next_1 = pair.start_node 
+pair_out.end_node = pair.end_node</code></pre></div><h2>小结</h2><p>这一节我们实现了构造复杂的NFA，我们用自顶向下的方法来解析正则语言，不过为了助于理解我们向从底部开始讲起。可以看到对于整个 NFA 的构造，其实就是从最顶部开始向下递归，整个过程大概是：</p><ul><li><code>expr -> factor_conn -> factor -> term</code></li><li>当递归过程回到factor_conn会根据<code>factor_conn ::= factor | factor factor*</code>判断可不可以继续构造下一个factor</li><li>如果不可以就返回到expr，expr则根据<code>expr ::= factor_conn ("|" factor_conn)*</code><br>判断能不能继续构造下一个factor_conn</li><li>重复上面的过程</li></ul><p>其实从这里离完成一个正则表达式引擎已经非常接近了，只需要最后的根据NFA对字符串进行操作了（下一节讲）。但是离最后我们要实现的还差最后两步：</p><ol><li>NFA->DFA</li><li>DFA最小化</li></ol>]]></description> 
+<pubDate>Mon, 19 Jan 1970 15:45:04 GMT</pubDate> 
+<guid isPermaLink="false">http://zhuanlan.zhihu.com/p/347938422</guid> 
+<link>http://zhuanlan.zhihu.com/p/347938422</link> 
+
+
+
+
+
+
+
+
+</item> 
+
+<item> 
+<title><![CDATA[从零实现正则表达式引擎：简单的NFA]]></title> 
+<description><![CDATA[<blockquote><b>完整代码：<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/Regex" class=" wrap external" target="_blank" rel="nofollow noreferrer">Regex in Python</a></b></blockquote><h2>再谈NFA和DFA</h2><p>上一节已经讲了FA，我们来回顾一下：</p><blockquote>有限状态机可以看作是一个有向图，状态机中有若干个节点，每个节点都可以根据输入字符来跳转到下一个节点，而区别NFA((非确定性有限状态自动机)和DFA(确定性有限状态自动机)的是DFA的下一个跳转状态是唯一确定的)<br>ε转移：针对空串输入进行的ε转移，不会改变输入流中的读写位置。</blockquote><p>我们来看一个例子：</p><figure data-size="normal"><noscript><img src="https://pic4.zhimg.com/v2-a9c12c04b7952d1b965d8e26d562e1db_b.jpg" data-caption="" data-size="normal" data-rawwidth="785" data-rawheight="583" class="origin_image zh-lightbox-thumb" width="785" data-original="https://pic4.zhimg.com/v2-a9c12c04b7952d1b965d8e26d562e1db_r.jpg"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='785' height='583'></svg>" data-caption data-size="normal" data-rawwidth="785" data-rawheight="583" class="origin_image zh-lightbox-thumb lazy" width="785" data-original="https://pic4.zhimg.com/v2-a9c12c04b7952d1b965d8e26d562e1db_r.jpg" data-actualsrc="https://pic4.zhimg.com/v2-a9c12c04b7952d1b965d8e26d562e1db_b.jpg" referrerpolicy="no-referrer"></figure><p>对于上面这个图，就是一个NFA，它的正则语言是：<code>[0-9]*[A-Z]+</code>因为它的部分状态对于一个输入字符可能有不同的状态转移。这就是为什么要将NFA转化为DFA。</p><h2>词法分析</h2><blockquote>将正则表达式转换为NFA，进而再转化为DFA是我们的目标。</blockquote><p>而第一步自然就是识别正则表达式，也和编译器的第一步相同。</p><p>当然这个词法分析比之后要写的C语言编译器的语法分析要简单许多，只要处理几种可能性</p><ol><li>普通字符</li><li>含有语义的字符</li><li>转义字符</li></ol><h2>Token</h2><p>Token也就是对应正则语言中的关键字</p><div class="highlight"><pre><code class="language-text">Tokens = { 
+'.': Token.ANY, 
+'^': Token.AT_BOL, 
+'$': Token.AT_EOL, 
+']': Token.CCL_END, 
+'[': Token.CCL_START, 
+'}': Token.CLOSE_CURLY, 
+')': Token.CLOSE_PAREN, 
+'*': Token.CLOSURE, 
+'-': Token.DASH, 
+'{': Token.OPEN_CURLY, 
+'(': Token.OPEN_PAREN, 
+'?': Token.OPTIONAL, 
+'|': Token.OR, 
+'+': Token.PLUS_CLOSE, 
+}</code></pre></div><h2>Lexer</h2><p>有了Token下一步自然就是识别处理他们，也就是将字符流切分为一个个Token。advance函数是Lexer中最重要的函数，但是逻辑非常简单，就是暴力的循环进行识别，包括识别转义字符和普通的语义字符。</p><div class="highlight"><pre><code class="language-text">def advance(self): 
+pos = self.pos 
+pattern = self.pattern 
+if pos > len(pattern) - 1: 
+self.current_token = Token.EOS 
+return Token.EOS 
+
+text = self.lexeme = pattern[pos] 
+if text == '\\': 
+self.isescape = not self.isescape 
+self.pos = self.pos + 1 
+self.current_token = self.handle_escape() 
+else: 
+self.current_token = self.handle_semantic_l(text) 
+
+return self.current_token</code></pre></div><p>Lexer中还有两个主要函数：handle_escape和handle_semantic_l</p><ul><li><b>handle_escape</b> 用来处理转义字符，当然转义字符最后本质上返回的还是普通字符类型，这个函数的主要功能就是来记录当前转义后的字符，然后赋值给lexem，供之后构造自动机使用</li><li><b>handle_semantic_l</b> 只有两行，一是查表，这个表保存了所有的拥有语义的字符，如果查不到就直接返回普通字符类型了</li></ul><h2>Thompson构造法</h2><p>重头戏来了，词法分析后自然就是构造自动机了。</p><p>将正则表达式转换为NFA的算法称为Thompson构造法。算法的基本思路就是：</p><blockquote>通过递归地将一个正则表达式划分成构成它的子表达式，在得到每个子表达式对应的NFA之后，根据子表达式之间的运算关系和一系列规则构造表达式自身对应的NFA</blockquote><p>简单来说就是不管多复杂的NFA都可以通过多个简单的NFA（像我们前面看到的那么简单）组合而成。</p><p>我们先不一口气讲完，后面用到再讲。</p><h2>NFA代码实现</h2><blockquote>构造NFA的主要文件都在nfa包下，nfa.py是NFA节点的定义，construction.py是实现对NFA的构造</blockquote><h2>NFA节点定义</h2><p>NFA节点的定义也很简单，其实这个正则表达式引擎完整的实现只有900行左右，每一部分拆开看都非常简单</p><ul><li><b>edge和input_set</b> 都是用来指示边的，边一共可能有四种可能的属性</li><ul><li>对应的节点有两个出去的ε边<br>edge = PSILON = -1</li><li>边对应的是字符集<br>edge = CCL = -2<br>input_set = 相应字符集</li><li>一条ε边<br>edge = EMPTY = -3</li><li>边对应的是单独的一个输入字符c<br>edge = c</li></ul></ul><p class="ztext-empty-paragraph"><br></p><ul><li><b>status_num</b> 每个节点都有唯一的一个标识</li><li><b>visited</b> 则是为了debug用来遍历NFA</li></ul><div class="highlight"><pre><code class="language-text">class Nfa(object): 
+STATUS_NUM = 0 
+
+def __init__(self): 
+self.edge = EPSILON 
+self.next_1 = None 
+self.next_2 = None 
+self.visited = False 
+self.input_set = set() 
+self.set_status_num() 
+
+def set_status_num(self): 
+self.status_num = Nfa.STATUS_NUM 
+Nfa.STATUS_NUM = Nfa.STATUS_NUM + 1 
+
+def set_input_set(self): 
+self.input_set = set() 
+for i in range(ASCII_COUNT): 
+self.input_set.add(chr(i))</code></pre></div><h2>简单节点的构造</h2><p>我们可以先来构造NFA最简单的几种形式。</p><ul><li>匹配给定单个字符</li><li>匹配任意单个字符</li><li>匹配[......]给定字符集</li><li>匹配除了 [...] 中字符的字符集</li></ul><p>这几种的形式都只有两个状态，非常简单，就不画图了。</p><h3>匹配给定单个字符</h3><blockquote>这里有个数据结构之前没有介绍：pair_out，其实就是一个NFA对，含有开始节点和结束节点。</blockquote><p>单个字符的NFA构造就是创建两个节点然后把当前匹配的字符作为edge</p><div class="highlight"><pre><code class="language-text"># 匹配单个字符 
+def nfa_single_char(pair_out): 
+if not lexer.match(Token.L): 
+return False 
+
+start = pair_out.start_node = Nfa() 
+pair_out.end_node = pair_out.start_node.next_1 = Nfa() 
+start.edge = lexer.lexeme 
+lexer.advance() 
+return True</code></pre></div><h3>匹配任意单个字符</h3><p>. 这个的NFA和上面单字符的唯一区别就是它的edge被设置为CCL，并且设置了input_set</p><div class="highlight"><pre><code class="language-text"># . 匹配任意单个字符 
+def nfa_dot_char(pair_out): 
+if not lexer.match(Token.ANY): 
+return False 
+
+start = pair_out.start_node = Nfa() 
+pair_out.end_node = pair_out.start_node.next_1 = Nfa() 
+start.edge = CCL 
+start.set_input_set() 
+
+lexer.advance() 
+return False</code></pre></div><h3>匹配[......]给定字符集</h3><p>这里的dodash是用来处理<code>-</code>符号的，里面的逻辑很简单。</p><div class="highlight"><pre><code class="language-text"># [] 匹配字符集 
+def nfa_set_char(pair_out): 
+if not lexer.match(Token.CCL_START): 
+return False 
+
+start = pair_out.start_node = Nfa() 
+pair_out.end_node = pair_out.start_node.next_1 = Nfa() 
+start.edge = CCL 
+start.input_set = set() 
+dodash(start.input_set) 
+
+lexer.advance() 
+return True</code></pre></div><h3>匹配除了 [...]中字符的字符集</h3><p>这个函数逻辑上只比上面的多了一个处理input_set，其实也就是取反的过程。</p><div class="highlight"><pre><code class="language-text">def nfa_set_nega_char(pair_out): 
+if not lexer.match(Token.CCL_START): 
+return False 
+
+neagtion = False 
+lexer.advance() 
+if lexer.match(Token.AT_BOL): 
+neagtion = True 
+
+start = pair_out.start_node = Nfa() 
+start.next_1 = pair_out.end_node = Nfa() 
+start.edge = CCL 
+dodash(start.input_set) 
+
+if neagtion: 
+char_set_inversion(start.input_set) 
+
+lexer.advance() 
+return True</code></pre></div><h2>小结</h2><p>在这里结束刚刚好，这篇最主要的内容就是构造简单的NFA。下一篇应该会写构造更复杂的NFA和通过构造的NFA来分析输入字符串。最后写从NFA转换到DFA，再最后用DFA分析输入的字符串</p>]]></description> 
+<pubDate>Mon, 19 Jan 1970 15:43:23 GMT</pubDate> 
+<guid isPermaLink="false">http://zhuanlan.zhihu.com/p/347617984</guid> 
+<link>http://zhuanlan.zhihu.com/p/347617984</link> 
+
+
+
+
+
+
+
+
+</item> 
+
+<item> 
+<title><![CDATA[从零实现一个正则表达式引擎：入门]]></title> 
+<description><![CDATA[<h2>开坑说明</h2><p>这个系列其实之前大二还是大三就已经写过的，但是现在准备再把之前从零系列结合书本再写一遍。</p><ul><li><a href="https://link.zhihu.com/?target=https%3A//www.cnblogs.com/secoding/tag/%25E5%25AE%259E%25E7%258E%25B0%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%25E5%25BC%2595%25E6%2593%258E" class=" wrap external" target="_blank" rel="nofollow noreferrer">从零写一个正则表达式引擎</a></li></ul><a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/Regex" data-draft-node="block" data-draft-type="link-card" class=" wrap external" target="_blank" rel="nofollow noreferrer">Github：Regex in Python</a><ul><li><a href="https://link.zhihu.com/?target=https%3A//www.cnblogs.com/secoding/tag/%25E4%25BB%258E%25E9%259B%25B6%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AA%25E7%25BC%2596%25E8%25AF%2591%25E5%2599%25A8" class=" wrap external" target="_blank" rel="nofollow noreferrer">从零写一个一个C语言编译器</a></li></ul><a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/C2j-Compiler" data-draft-node="block" data-draft-type="link-card" class=" wrap external" target="_blank" rel="nofollow noreferrer">Github：C2j-Compiler</a><ul><li><a href="https://link.zhihu.com/?target=https%3A//www.cnblogs.com/secoding/tag/%25E4%25BB%258E%25E9%259B%25B6%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AA%25E6%2593%258D%25E4%25BD%259C%25E7%25B3%25BB%25E7%25BB%259F" class=" wrap external" target="_blank" rel="nofollow noreferrer">从零写一个一个操作系统</a></li></ul><a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/FragileOS" data-draft-node="block" data-draft-type="link-card" class=" wrap external" target="_blank" rel="nofollow noreferrer">Github：FragileOS</a><p class="ztext-empty-paragraph"><br></p><p>但是其实操作系统的坑还不算填完，而且已经有一段时间没接触这些了。所以算是自己重新学一遍，然后顺便分享出来。所以其实都是书上、视频里的东西，希望能降低大家的学习曲线，当初自己的入门也是非常的难受。</p><p>文章都会重构，代码虽然乱七八糟但是应该不会重构了，之后应该会想重新开坑。</p><h2>实现目标</h2><p>涵盖了差不多所有的基本语法</p><div class="highlight"><pre><code class="language-python3"><span class="n">st</span> <span class="o">=</span> <span class="s1">'AS342abcdefg234aaaaabccccczczxczcasdzxc'</span> 
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'([A-Z]+[0-9]*abcdefg)([0-9]*)(\*?|a+)(zx|bc*)([a-z]+|[0-9]*)(asd|fgh)(zxc)'</span> 
+
+<span class="n">regex</span> <span class="o">=</span> <span class="n">Regex</span><span class="p">(</span><span class="n">st</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span> 
+<span class="n">result</span> <span class="o">=</span> <span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">()</span> 
+<span class="n">log</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></code></pre></div><p>更多示例可以在<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/Regex/blob/master/sample.py" class=" wrap external" target="_blank" rel="nofollow noreferrer">github</a>上看到</p><h2>单词识别</h2><blockquote>正则表达式的就是用于描述程序设计语言里有效单词的符号表示法，其实也就是用来进行单词识别的</blockquote><p>先从一个简单的例子开始，假如我们要识别一个关键字：<code>int</code>，最简单的想法就是直接判断每个对应位置的字符对不对，也就是用三个if分支来判断。这时我们可以把这三个分支想象为三个状态（凑合看吧，不想画图了）</p><figure data-size="normal"><noscript><img src="https://pic3.zhimg.com/v2-8b4c0e103a4f1adb266de4e6030e8c82_b.jpg" data-caption="" data-size="normal" data-rawwidth="886" data-rawheight="239" class="origin_image zh-lightbox-thumb" width="886" data-original="https://pic3.zhimg.com/v2-8b4c0e103a4f1adb266de4e6030e8c82_r.jpg"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='886' height='239'></svg>" data-caption data-size="normal" data-rawwidth="886" data-rawheight="239" class="origin_image zh-lightbox-thumb lazy" width="886" data-original="https://pic3.zhimg.com/v2-8b4c0e103a4f1adb266de4e6030e8c82_r.jpg" data-actualsrc="https://pic3.zhimg.com/v2-8b4c0e103a4f1adb266de4e6030e8c82_b.jpg" referrerpolicy="no-referrer"></figure><p>每一次分支的判断的正确都是向下一个分支的转移，而如果到达了最后一个分支（同时也就是到达了最后一个状态），这时就说明字符是匹配的。</p><h2>有限自动机（FA）</h2><p>上面的这个图其实就是有限自动机，一个有限自动机其实包含五个方面：</p><ul><li>有限状态集（也就是图中的圈</li><li>字母表（就是图中的int</li><li>转移函数（其实就相当于是if的分支</li><li>一个起始状态和一个或多个接受状态（S0和S3</li></ul><p>这时候我们就可以想一下正则表达式当中的可接受0-9所有数字是怎么回事了。其实就是改变转移函数（分支）。</p><figure data-size="normal"><noscript><img src="https://pic1.zhimg.com/v2-d75296f0adfb8efb7a4b3441bf0d9574_b.jpg" data-caption="" data-size="normal" data-rawwidth="333" data-rawheight="236" class="content_image" width="333"/></noscript><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='333' height='236'></svg>" data-caption data-size="normal" data-rawwidth="333" data-rawheight="236" class="content_image lazy" width="333" data-actualsrc="https://pic1.zhimg.com/v2-d75296f0adfb8efb7a4b3441bf0d9574_b.jpg" referrerpolicy="no-referrer"></figure><h2>正则表达式</h2><p>这时终于可以引入我们的正题了：正则表达式。正则表达式是等价于FA的，只是它是用符号表示法来描述其语言。</p><p>比如上面的第一个图用正则表达式描述就是<code>int</code>，当然一般的正则表达式肯定都比这复杂，所以正则表达式也有相应的描述。</p><h2>基本操作</h2><p>一个正则表达式都是由三个基本操作构建而成，这也是接下来需要实现的关键。</p><ul><li>选择</li><li>连接</li><li>闭包</li></ul><p>这里提一下闭包，闭包其实就是<code>+和*</code>，也就是匹配前面的子表达式零次或多次（一次或多次），这两个也是实现的关键。其余的就不提了，大家都很熟悉（其实我基本避免写正则，一个是真的不熟练，因为基本没用过，一个是用了正则严重的丧失了可读性）</p><h2>性质</h2><blockquote>正则表达式在许多操作下是封闭的，即如果我们将操作应用到一个RE或一组RE，其结果仍然是RE。显而易见的例子包括连接、并集和闭包操作。根据RE的定义，所有这些表达式也都是RE。 ——编译器技术</blockquote><h2>不过是小型编译器</h2><blockquote>这里说一下词法分析，词法分析应该属于编译原理的内容，也是编译器的第一步，它的任务就是将字符流转换为输入语言的单词流。所以正则表达式引擎是可以用来实现词法分析器的。当然现在大部分的编译器都应该用的是手工编写的词法分析器，之后<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh/C2j-Compiler" class=" wrap external" target="_blank" rel="nofollow noreferrer">从零实现一个编译器</a>的词法分析器也是用的手工编写的。</blockquote><p>但是虽然正则表达式可以作为编译器的一部分，但是它的实现也类似完整的编译器，下面是这个正则表达式引擎实现的过程：</p><ol><li>首先进行词法分析</li><li>语法分析（这里用自顶向下）</li><li>语义分析 <i>（因为正则的表达能力非常弱，所以可以省略生成AST的部分直接进行代码生成）</i></li><li>代码生成，这里也就是进行NFA的生成</li><li>NFA到DFA的转换，这里开始就是正则和状态机的相关的知识了</li><li>DFA的最小化</li></ol><p>所以其实正则表达式的引擎完全可以看作是一个小型的编译器，算是为之后写编译器降低一下学习曲线。</p><h2>小结</h2><p>这一节其实就是稍微介绍一下接下来要进行实现的前置知识，其实非常的少，并且如果有其他的知识也在用到的时候再提。</p><p>另外这是我的github：<a href="https://link.zhihu.com/?target=https%3A//github.com/dejavudwh" class=" wrap external" target="_blank" rel="nofollow noreferrer">dejavudwh</a>，欢迎来赏星星。</p>]]></description> 
+<pubDate>Mon, 19 Jan 1970 15:41:13 GMT</pubDate> 
+<guid isPermaLink="false">http://zhuanlan.zhihu.com/p/347266654</guid> 
+<link>http://zhuanlan.zhihu.com/p/347266654</link> 
+
+
+
+
+
+
+
+
+</item> 
+
+</channel> 
+</rss>

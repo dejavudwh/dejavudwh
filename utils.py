@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-
 import json
 from configparser import ConfigParser
 import os
 import datetime
 import heapq
 import time
+import yaml
 
 
 def format_json(data):
@@ -13,22 +13,14 @@ def format_json(data):
 
 
 def read_config():
-    cp = ConfigParser()
-    config = {}
-
-    file_path = os.path.join(os.path.abspath('.'), 'config.ini')
+    file_path = os.path.join(os.path.abspath('.'), 'config.yml')
     if not os.path.exists(file_path):
-        raise FileNotFoundError("配置文件不存在")
+        raise FileNotFoundError("configuration file does not exist")
+    
+    fs = open(file_path, encoding="UTF-8")
+    config = yaml.load(fs,)
+    format_json(config)
 
-    cp.read(file_path)
-
-    sections = cp.sections()
-    for section in sections:
-        config[section] = {}
-        items = cp.items(section)
-        for item in items:
-            config[section][item[0]] = item[1]
-    # print(config)
     return config
 
 
