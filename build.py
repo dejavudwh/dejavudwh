@@ -92,7 +92,6 @@ def update_readme(contentsMap):
                 lines.append(line)
                 rows = rows + 1
             for tag in tags:
-                # print(tag, line)
                 if tag[1] in line:
                     posMap[tag[0]] = rows
                     needUpdate = True
