@@ -1,15 +1,53 @@
-github-api:
-  prefix: https://api.github.com
-  repos: /users/{user}/repos
-  commits: /repos/{owner}/{repo}/commits
-
-zhihu-api:
-  prefix: https://www.zhihu.com/people
-  home: /{zhihu_id}
-  posts: /{zhihu_id}/posts
-
+# user config
 user:
-  username: dejavudwh
-  zhihu_id: shadow-61-66
-  zhihu_count: 5
-  entry_count: 5
+  params:
+    # _class: github, id is the parameter that's going to be used in the URL
+    - github:
+        id: dejavudwh
+    - zhihu:
+        id: shadow-61-66
+
+  feedList:
+    # default feed
+    - githubActivities:
+      disable: False
+      feedName: githubFeed
+
+    - zhihuPosts:
+      disable: False
+      feedName: zhihuPostsFeed
+
+    # user feed
+    - juejin:
+        disable: True
+        url:
+        count:
+
+feeds:
+  # default feed
+  # three messages of the feed: title, url, date
+  - githubFeed:
+      _class: github
+      url: https://github.com/{github_id}.atom
+      params: [id]
+      count: 5
+      style: '- [{title}]({url}) - {date}'
+      tagStartName: GITHUB:START
+      tagEndName: GITHUB:END 
+
+  - zhihuPostsFeed:
+      _class:
+      url:
+      params:
+      count: 5
+      style: 
+      tagStartName: ZHIHUPOSTS:START
+      tagEndName: ZHIHUPOSTS:END 
+
+  # user feed
+  - juejinFeed:
+
+api:
+  # default api
+  - githubApi:
+  - zhihuApi:

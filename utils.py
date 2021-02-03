@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import json
-from configparser import ConfigParser
 import os
 import datetime
 import heapq
