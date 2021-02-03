@@ -1,6 +1,6 @@
 name: update-readme
 
-on: 
+on: [push]
 
 jobs:
   build:
