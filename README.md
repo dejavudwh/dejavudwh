@@ -40,8 +40,10 @@
     - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/7b3c833d9b...91bc2d776f) - 2021-02-03T07:06:48Z
     - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/36301456c3...7b3c833d9b) - 2021-02-03T06:17:52Z
     <!-- GITHUB:END -->
-    <!-- BLOGPOSTS:START --> 
-    <!-- BLOGPOSTS:END -->
+    <td>
+    <!-- ZHIHUPOSTS:START --> 
+    <!-- ZHIHUPOSTS:END -->
+    </td>
     </tr>
     </table>
   </details>

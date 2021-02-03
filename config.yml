@@ -14,12 +14,12 @@ user:
       entryCount: 5
         
     - feedName: zhihuPostsFeed
-      disable: True
+      disable: False
       entryCount: 5
 
     # user feed
     - feedName: BlogFeed
-      disable: False
+      disable: True
       entryCount: 5
 
 
@@ -35,10 +35,10 @@ feeds:
     tagEndName: GITHUB:END 
 
   zhihuPostsFeed:
-    _class:
-    url:
-    params:
-    style: 
+    _class: zhihu
+    url:  https://rsshub.app/zhihu/posts/people/{id}
+    params: [id]
+    style: '    - [{title}]({url}) - {date}'
     tagStartName: ZHIHUPOSTS:START
     tagEndName: ZHIHUPOSTS:END 
 
