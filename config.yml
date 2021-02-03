@@ -21,8 +21,15 @@ user:
     - feedName: BlogFeed
       disable: True
       entryCount: 5
+  
+  apiList:
+    # Built-in API, User-provided APIs for retrieving JSON have not been developed yet
+    - apiName: githubRecentComit
+      disable: False
+      entryCount: 5
 
 
+# detailed configuration of all seeds
 feeds:
   # default feed
   # three messages of the feed: title, url, date
@@ -51,7 +58,17 @@ feeds:
     tagStartName: BLOGPOSTS:START
     tagEndName: BLOGPOSTS:END 
 
+
+# detailed configuration of all api
+# Built-in API, User-provided APIs for retrieving JSON have not been developed yet
 api:
   # default api
-  - githubApi:
-  - zhihuApi:
+  # TODO hard code for realize to grab the latest commit 
+  allGithubRepo:
+    _class: github
+    url: https://api.github.com/users/{id}/repos
+  allGithubCommit:
+    _class: github
+    url: https://api.github.com/repos/{owner}/{repo}/commits
+
+  zhihuApi:

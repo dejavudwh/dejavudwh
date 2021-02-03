@@ -1,9 +1,14 @@
 import utils
 import feedparser
+import requests
+import json
+import urllib3
+
 
 CONFIG = {}
 
 
+# about rss start #
 def fetch_feedlist():
     # Gets all feeds set by the user then fetch feed
     feedlist = CONFIG['user']['feedList']
@@ -73,8 +78,47 @@ def find_tags(feedNames):
         tags.append(tag)
     
     return tags
-    
+# about rss end #
 
+
+# about github api #
+def fetch_repos_name(githubId):
+    # TODO hard code
+    url = CONFIG['api']['allGithubRepo']['url'].replace('{id}', githubId)
+    res = requests.get(url, verify=False)
+    data = json.loads(res.text)
+    repos = utils.MyHeap()
+    for i in range(len(data)):
+        # time for compare
+        time = utils.githubtime_to_time(data[i]['pushed_at'])
+        utils.MyHeap.push(repos, (time, data[i]['name']))
+
+    return repos
+
+
+def fetch_commits():
+    # TODO hard code
+    githubId = CONFIG['user']['params']['github']['id']
+    repos = fetch_repos_name(githubId)
+    url = CONFIG['api']['allGithubCommit']['url'].replace('{owner}', githubId)
+    count = CONFIG['user']['apiList'][0]['entryCount']
+
+    for repo in repos.get_data():
+        res = requests.get(url.replace('{repo}', repo[1]), verify=False)
+        data = json.loads(res.text)
+        count = count if count < len(data) else len(data)
+        commits = utils.MyHeap()
+        for i in range(count):
+            commit = data[i]['commit']
+            date = commit['committer']['date']
+            time = utils.githubtime_to_time(date)
+            utils.MyHeap.push(commits, (time, (commit['message'], data[i]['html_url'], repo[1], date)))
+    
+    return commits
+# about github api end #
+
+
+# about update readme #
 def update_readme(contentsMap):
     feedNames = []
     for key in contentsMap:
@@ -114,12 +158,16 @@ def update_readme(contentsMap):
 
 
 if __name__ == '__main__':
+    urllib3.disable_warnings()
     global CONIFG
     CONFIG = utils.read_config()
     # fetch_feed('https://github.com/dejavudwh.atom')
-    feeds = fetch_feedlist()
+    # feeds = fetch_feedlist()
     # utils.format_json(feeds)
     # print(feeds)
-    contentsMap = generate_readme(feeds)
+    # contentsMap = generate_readme(feeds)
     # print(contentsMap)
-    update_readme(contentsMap)
+    # utils.format_json(CONFIG)
+    commits = fetch_commits()
+    utils.format_json(commits)
+    # update_readme(contentsMap)
