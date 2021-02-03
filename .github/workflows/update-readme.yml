@@ -29,7 +29,9 @@ jobs:
         python build.py
     - name: commit and push 
       run: |
-        git config --global user.email "bot@github.com" && git config --global user.name "Bot"
         git diff
-        git add . && git commit -m ":memo 自动更新" || exit 0
+        git config --global user.email "bot@github.com" && git config --global user.name "Bot"
+        git pull
+        git add -A
+        git commit -m ":memo 自动更新" || exit 0
         git push
