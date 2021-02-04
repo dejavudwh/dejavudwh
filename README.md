@@ -39,6 +39,7 @@
     <!-- ZHIHUPOSTS:START --> 
     <!-- ZHIHUPOSTS:END -->
 
+
     - [从零实现正则表达式引擎：从NFA到DFA](http://zhuanlan.zhihu.com/p/348298134) - Mon, 19 Jan 1970 15:47:45 GMT
     - [从零实现正则表达式引擎：复杂的NFA](http://zhuanlan.zhihu.com/p/347938422) - Mon, 19 Jan 1970 15:45:04 GMT
     - [从零实现正则表达式引擎：简单的NFA](http://zhuanlan.zhihu.com/p/347617984) - Mon, 19 Jan 1970 15:43:23 GMT
@@ -47,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/d623e1f97f...95bb154c24) - 2021-02-03T14:30:47Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/9135baa47b...98da750311) - 2021-02-03T14:12:04Z
-    - [dejavudwh pushed to dev in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/d979983bd2...9135baa47b) - 2021-02-03T14:01:37Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/1a6bf0c044...1736abb950) - 2021-02-03T12:50:18Z
-    - [dejavudwh created a tag 1.0 in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/tree/1.0) - 2021-02-03T12:43:07Z
+    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/fa7b0001cc...efe8d67212) - 2021-02-04T04:31:59Z
+    - [dejavudwh opened a pull request in abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme/pull/476) - 2021-02-03T16:57:05Z
+    - [dejavudwh pushed to master in dejavudwh/awesome-github-profile-readme](https://github.com/dejavudwh/awesome-github-profile-readme/compare/adc0bbde1d...9c853c2d6a) - 2021-02-03T16:52:36Z
+    - [dejavudwh forked dejavudwh/awesome-github-profile-readme from abhisheknaiidu/awesome-github-profile-readme](https://github.com/dejavudwh/awesome-github-profile-readme) - 2021-02-03T16:49:10Z
+    - [dejavudwh starred MunGell/awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) - 2021-02-03T16:31:24Z
     <!-- GITHUB:END -->
     </td>
     </tr>
