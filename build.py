@@ -99,13 +99,12 @@ def update_readme(contentsMap):
                     rows = rows + 1
                     lines.append(line)
                     needUpdate = False
+    utils.format_json(posMap)
     # insert
-    i = 0
     for key, value in contentsMap.items():
         pos = posMap[key]
         # print(key, value)
-        lines.insert(pos + i, value + '\n')    
-        i = i + 1  
+        lines.insert(pos, value + '\n')    
     
     content = ''.join(lines)
     file = open('README.md', 'w', encoding='UTF-8')
