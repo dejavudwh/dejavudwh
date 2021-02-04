@@ -6,7 +6,7 @@ on:
       - main
 
   schedule:
-    - cron:  '43 23 * * *'
+    - cron:  '50 4 * * *'
 
 jobs:
   build:
