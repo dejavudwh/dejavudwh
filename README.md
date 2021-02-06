@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh closed an issue in guangzan/awescnb](https://github.com/guangzan/awescnb/issues/12) - 2021-02-06T13:56:25Z
+    - [dejavudwh opened an issue in guangzan/awescnb](https://github.com/guangzan/awescnb/issues/12) - 2021-02-06T11:12:00Z
     - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/c95297e56a...5b97c897a3) - 2021-02-06T10:09:53Z
     - [dejavudwh starred dabeaz/ply](https://github.com/dabeaz/ply) - 2021-02-05T10:06:52Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1436) - 2021-02-04T11:51:33Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/64d6f9ca24...1c109a9481) - 2021-02-04T07:26:36Z
-    - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/8aae83a069...cba8f0ecfb) - 2021-02-04T06:53:42Z
     <!-- GITHUB:END -->
     </td>
     </tr>
