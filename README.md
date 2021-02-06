@@ -1,6 +1,6 @@
 ## Hi there <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-> Hi, I'm dejavudwh(HDW), A college student from China. 
+> Hi, I'm dejavudwh(HDW), A college student from China. **[Blog](https://www.cnblogs.com/secoding)** 
 
 ![](https://komarev.com/ghpvc/?username=dejavudwh)
 <img src="https://img.shields.io/badge/BLOG-dejavudwh-blue"><a href="https://www.cnblogs.com/secoding/"></a></img>
