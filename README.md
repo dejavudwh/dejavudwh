@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/b1f01f2be6...27596fe6ec) - 2021-02-08T14:27:44Z
-    - [dejavudwh starred WerWolv/ImHex](https://github.com/WerWolv/ImHex) - 2021-02-08T09:50:01Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1456) - 2021-02-07T09:02:49Z
-    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/3b66d26c82...b1f01f2be6) - 2021-02-07T08:58:51Z
-    - [dejavudwh created a branch main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/main) - 2021-02-07T08:48:23Z
+    - [dejavudwh opened an issue in BOOKXNOTE/BookxNote-pro](https://github.com/BOOKXNOTE/BookxNote-pro/issues/131) - 2021-02-09T18:01:32Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1479) - 2021-02-09T16:30:32Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1478) - 2021-02-09T16:13:24Z
+    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/73bcb96e26...6ac5a0f044) - 2021-02-09T14:34:37Z
+    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/27596fe6ec...73bcb96e26) - 2021-02-09T13:18:52Z
     <!-- GITHUB:END -->
     </td>
     </tr>
