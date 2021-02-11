@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred HMBSbige/ShadowsocksR-Windows](https://github.com/HMBSbige/ShadowsocksR-Windows) - 2021-02-11T06:21:22Z
     - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/6401d7b9c7...e12269e6cd) - 2021-02-10T14:58:33Z
     - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/3ff04406ae...6401d7b9c7) - 2021-02-10T12:11:50Z
     - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/6ac5a0f044...3ff04406ae) - 2021-02-10T09:01:08Z
     - [dejavudwh opened an issue in BOOKXNOTE/BookxNote-pro](https://github.com/BOOKXNOTE/BookxNote-pro/issues/131) - 2021-02-09T18:01:32Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1479) - 2021-02-09T16:30:32Z
     <!-- GITHUB:END -->
     </td>
     </tr>
