@@ -99,7 +99,7 @@ def update_readme(contentsMap):
                     rows = rows + 1
                     lines.append(line)
                     needUpdate = False
-    utils.format_json(posMap)
+    # utils.format_json(posMap)
     # insert
     for key, value in contentsMap.items():
         pos = posMap[key]
@@ -118,7 +118,7 @@ if __name__ == '__main__':
     # fetch_feed('https://github.com/dejavudwh.atom')
     feeds = fetch_feedlist()
     # utils.format_json(feeds)
-    # print(feeds)
+    print(feeds)
     contentsMap = generate_readme(feeds)
     # print(contentsMap)
     update_readme(contentsMap)
