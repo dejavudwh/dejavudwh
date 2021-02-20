@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1604) - 2021-02-20T13:12:45Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1603) - 2021-02-20T13:02:49Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1602) - 2021-02-20T12:57:33Z
     - [dejavudwh commented on issue siyuan-note/siyuan#1580](https://github.com/siyuan-note/siyuan/issues/1580) - 2021-02-19T14:51:49Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1580) - 2021-02-19T13:32:50Z
-    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/9e0f40362a...c762ef7918) - 2021-02-19T09:20:46Z
-    - [dejavudwh starred wa0x6e/cal-heatmap](https://github.com/wa0x6e/cal-heatmap) - 2021-02-19T08:43:14Z
-    - [dejavudwh starred conwnet/github1s](https://github.com/conwnet/github1s) - 2021-02-19T08:42:36Z
     <!-- GITHUB:END -->
     </td>
     </tr>
