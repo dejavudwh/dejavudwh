@@ -43,11 +43,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/8b86122952...ddd793e6e0) - 2021-02-25T07:24:47Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1672) - 2021-02-25T07:19:02Z
+    - [dejavudwh starred Kenshin/simpread](https://github.com/Kenshin/simpread) - 2021-02-25T06:01:54Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1667) - 2021-02-24T17:13:35Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1666) - 2021-02-24T17:04:27Z
-    - [dejavudwh commented on issue siyuan-note/siyuan#1665](https://github.com/siyuan-note/siyuan/issues/1665) - 2021-02-24T15:38:34Z
-    - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/93dd24be2f...8b86122952) - 2021-02-24T15:34:22Z
-    - [dejavudwh starred lua/lua](https://github.com/lua/lua) - 2021-02-23T11:41:11Z
     <!-- GITHUB:END -->
     </td>
     </tr>
