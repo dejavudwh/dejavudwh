@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1735) - 2021-03-01T16:32:12Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1734) - 2021-03-01T16:21:54Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1719) - 2021-02-28T14:29:30Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1716) - 2021-02-28T07:10:50Z
     - [dejavudwh pushed to main in dejavudwh/Labs](https://github.com/dejavudwh/Labs/compare/8b86122952...ddd793e6e0) - 2021-02-25T07:24:47Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1672) - 2021-02-25T07:19:02Z
-    - [dejavudwh starred Kenshin/simpread](https://github.com/Kenshin/simpread) - 2021-02-25T06:01:54Z
     <!-- GITHUB:END -->
     </td>
     </tr>
