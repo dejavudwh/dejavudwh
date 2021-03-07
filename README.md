@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/1787) - 2021-03-07T06:09:35Z
     - [dejavudwh commented on issue siyuan-note/siyuan#1667](https://github.com/siyuan-note/siyuan/issues/1667) - 2021-03-04T16:29:10Z
     - [dejavudwh commented on issue siyuan-note/siyuan#1667](https://github.com/siyuan-note/siyuan/issues/1667) - 2021-03-04T16:27:59Z
     - [dejavudwh commented on issue siyuan-note/siyuan#1719](https://github.com/siyuan-note/siyuan/issues/1719) - 2021-03-04T16:19:56Z
     - [dejavudwh commented on issue siyuan-note/siyuan#1734](https://github.com/siyuan-note/siyuan/issues/1734) - 2021-03-02T03:11:40Z
-    - [dejavudwh commented on issue siyuan-note/siyuan#1734](https://github.com/siyuan-note/siyuan/issues/1734) - 2021-03-02T02:50:42Z
     <!-- GITHUB:END -->
     </td>
     </tr>
