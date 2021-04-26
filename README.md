@@ -38,16 +38,21 @@
     <td>
     <!-- ZHIHUPOSTS:START --> 
 
+    - [Github新玩具：Python + Action自动更新Profile](http://zhuanlan.zhihu.com/p/349262045) - Mon, 19 Jan 1970 15:53:43 GMT
+    - [从零实现正则表达式引擎：DFA最小化](http://zhuanlan.zhihu.com/p/349264940) - Mon, 19 Jan 1970 15:53:43 GMT
+    - [从零实现正则表达式引擎：从NFA到DFA](http://zhuanlan.zhihu.com/p/348298134) - Mon, 19 Jan 1970 15:47:45 GMT
+    - [从零实现正则表达式引擎：复杂的NFA](http://zhuanlan.zhihu.com/p/347938422) - Mon, 19 Jan 1970 15:45:04 GMT
+    - [从零实现正则表达式引擎：简单的NFA](http://zhuanlan.zhihu.com/p/347617984) - Mon, 19 Jan 1970 15:43:23 GMT
     <!-- ZHIHUPOSTS:END -->
     </td>
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh pushed to master in dejavudwh/sicp](https://github.com/dejavudwh/sicp/compare/15a6d2ae7f...74ec9242be) - 2021-04-06T12:16:43Z
-    - [dejavudwh pushed to master in dejavudwh/sicp](https://github.com/dejavudwh/sicp/compare/b58b730790...15a6d2ae7f) - 2021-04-06T11:32:20Z
-    - [dejavudwh pushed to master in dejavudwh/sicp](https://github.com/dejavudwh/sicp/compare/802d5c0440...b58b730790) - 2021-04-06T09:37:59Z
-    - [dejavudwh starred jekil/awesome-hacking](https://github.com/jekil/awesome-hacking) - 2021-04-04T15:58:46Z
-    - [dejavudwh commented on issue siyuan-note/siyuan#1818](https://github.com/siyuan-note/siyuan/issues/1818) - 2021-03-14T08:50:40Z
+    - [dejavudwh opened a pull request in Chaney1024/vue-dark-theme](https://github.com/Chaney1024/vue-dark-theme/pull/2) - 2021-04-26T15:34:46Z
+    - [dejavudwh pushed to vulnerability-mining-page in dejavudwh/vue-dark-theme](https://github.com/dejavudwh/vue-dark-theme/compare/e1a382ee38...c315d1b434) - 2021-04-26T15:32:28Z
+    - [dejavudwh closed a pull request in Chaney1024/vue-dark-theme](https://github.com/Chaney1024/vue-dark-theme/pull/1) - 2021-04-26T03:18:20Z
+    - [dejavudwh opened a pull request in Chaney1024/vue-dark-theme](https://github.com/Chaney1024/vue-dark-theme/pull/1) - 2021-04-26T03:12:55Z
+    - [dejavudwh created a branch vulnerability-mining-page in dejavudwh/vue-dark-theme](https://github.com/dejavudwh/vue-dark-theme/compare/vulnerability-mining-page) - 2021-04-26T03:10:43Z
     <!-- GITHUB:END -->
     </td>
     </tr>
