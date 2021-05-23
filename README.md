@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to master in dejavudwh/Regex](https://github.com/dejavudwh/Regex/compare/e5c926d440...49dfcd1f28) - 2021-05-23T02:58:53Z
+    - [dejavudwh merged a pull request in dejavudwh/Regex](https://github.com/dejavudwh/Regex/pull/1) - 2021-05-23T02:58:53Z
     - [dejavudwh pushed to hexo in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/0f6e0cba80...0f3fe8e68e) - 2021-05-15T02:57:18Z
     - [dejavudwh pushed to hexo in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/b3bced7aa1...0f6e0cba80) - 2021-05-15T02:40:59Z
     - [dejavudwh pushed to hexo in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/9ae359cb44...b3bced7aa1) - 2021-05-15T02:21:58Z
-    - [dejavudwh pushed to FigureBed in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/b51969f684...6fe52b6b0f) - 2021-05-15T02:14:01Z
-    - [dejavudwh created a branch FigureBed in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/FigureBed) - 2021-05-15T02:08:16Z
     <!-- GITHUB:END -->
     </td>
     </tr>
