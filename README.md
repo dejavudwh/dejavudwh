@@ -48,11 +48,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/03b6900933...8c265ecc2c) - 2021-05-30T06:06:21Z
+    - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/8bf4e5a182...03b6900933) - 2021-05-30T02:52:09Z
     - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/fe7a91fb5d...8bf4e5a182) - 2021-05-29T12:51:47Z
     - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/49c6a499ab...fe7a91fb5d) - 2021-05-29T12:47:06Z
     - [dejavudwh created a branch main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/main) - 2021-05-29T12:22:06Z
-    - [dejavudwh created a repository dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp//) - 2021-05-29T12:22:05Z
-    - [dejavudwh pushed to master in dejavudwh/Regex](https://github.com/dejavudwh/Regex/compare/e5c926d440...49dfcd1f28) - 2021-05-23T02:58:53Z
     <!-- GITHUB:END -->
     </td>
     </tr>
