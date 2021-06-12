@@ -8,26 +8,13 @@
 
 ### Keywords 
 
-> Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine
+> Compiler, Java, SSM, Scheme, JavaScript, Electron, Python, Lexer, Parser, OS, Rust, C, Algorithms, Data Structures, PL, Haskell, Regex engine, Cyber Security, Pwn, Reverse
 
 *最近状态由Python脚本自动更新，详见<a href="https://github.com/dejavudwh/dejavudwh"> repo</a>*
 
 <details>
 
   <summary><font size="5.5" color="#3399FF"><b>Recent activity 🖱️(Click:)</b></font></summary>
-
-  - #### 🔭 Working:
-
-    - [翻译 The Algorithm Design Manual (2nd Ed.)](https://github.com/dejavudwh/The-Algorithm-Design-Manual)
-
-  - #### 🌱 Learning:
-
-    - 微积分、线性代数
-    - LeetCode刷题
-    - 英语
-    - 整理以前项目的博客：[从零写一个编译器](https://www.cnblogs.com/secoding/tag/从零写一个编译器/)、[从零实现一个正则表达式引擎](https://www.zhihu.com/column/c_1337535182023852032)、[从零写一个操作系统](https://www.cnblogs.com/secoding/tag/从零写一个操作系统/)
-
----
 
   - <details open>
 
