@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred bash-c/pwn_repo](https://github.com/bash-c/pwn_repo) - 2021-06-21T14:46:22Z
     - [dejavudwh pushed to main in dejavudwh/dejavudwh](https://github.com/dejavudwh/dejavudwh/compare/db3f2b208c...4f0007ac3d) - 2021-06-12T15:59:50Z
     - [dejavudwh starred shellphish/how2heap](https://github.com/shellphish/how2heap) - 2021-06-11T06:38:22Z
     - [dejavudwh starred firmianay/CTF-All-In-One](https://github.com/firmianay/CTF-All-In-One) - 2021-05-31T06:08:04Z
     - [dejavudwh pushed to master in dejavudwh/Regex](https://github.com/dejavudwh/Regex/compare/e5c926d440...49dfcd1f28) - 2021-05-23T02:58:53Z
-    - [dejavudwh merged a pull request in dejavudwh/Regex](https://github.com/dejavudwh/Regex/pull/1) - 2021-05-23T02:58:53Z
     <!-- GITHUB:END -->
     </td>
     </tr>
