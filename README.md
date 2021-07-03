@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh opened an issue in anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats/issues/1166) - 2021-07-01T09:33:38Z
-    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/7b62ae354e...2fa1c09ca4) - 2021-07-01T08:35:36Z
-    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/8ff0041102...7b62ae354e) - 2021-07-01T07:35:29Z
-    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/8d6c63ad92...8ff0041102) - 2021-06-30T12:57:14Z
-    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/42e7246421...8d6c63ad92) - 2021-06-30T09:48:05Z
+    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/4c3df5e108...ea13de0509) - 2021-07-03T15:32:52Z
+    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/9a2155b894...4c3df5e108) - 2021-07-03T13:06:35Z
+    - [dejavudwh starred ttroy50/cmake-examples](https://github.com/ttroy50/cmake-examples) - 2021-07-03T10:04:27Z
+    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/2fa1c09ca4...9a2155b894) - 2021-07-03T08:18:41Z
+    - [dejavudwh starred sylar-yin/sylar](https://github.com/sylar-yin/sylar) - 2021-07-03T07:03:21Z
     <!-- GITHUB:END -->
     </td>
     </tr>
