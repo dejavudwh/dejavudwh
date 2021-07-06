@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred SmartKeyerror/Psyduck](https://github.com/SmartKeyerror/Psyduck) - 2021-07-06T12:21:18Z
     - [dejavudwh starred public-apis/public-apis](https://github.com/public-apis/public-apis) - 2021-07-05T12:36:38Z
     - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/bd9e270497...8834e59622) - 2021-07-05T10:15:09Z
     - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/6cfa81f31e...bd9e270497) - 2021-07-05T09:43:26Z
     - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/75613bca43...6cfa81f31e) - 2021-07-05T09:11:23Z
-    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/70f5698587...75613bca43) - 2021-07-05T08:27:25Z
     <!-- GITHUB:END -->
     </td>
     </tr>
