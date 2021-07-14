@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2427) - 2021-07-14T16:43:03Z
     - [dejavudwh starred Hack-with-Github/Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking) - 2021-07-13T14:52:17Z
     - [dejavudwh starred sbilly/awesome-security](https://github.com/sbilly/awesome-security) - 2021-07-13T14:51:31Z
     - [dejavudwh starred github/securitylab](https://github.com/github/securitylab) - 2021-07-13T14:47:04Z
     - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/cd4843df84...c73500a637) - 2021-07-13T12:30:18Z
-    - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/efe13bb2c2...b5776f1cdf) - 2021-07-12T07:48:13Z
     <!-- GITHUB:END -->
     </td>
     </tr>
