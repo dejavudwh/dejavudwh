@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/b5776f1cdf...9e5f436da7) - 2021-07-16T14:49:45Z
     - [dejavudwh commented on issue siyuan-note/siyuan#2436](https://github.com/siyuan-note/siyuan/issues/2436) - 2021-07-15T09:22:40Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2436) - 2021-07-15T09:17:08Z
     - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/c73500a637...d19755e0c4) - 2021-07-15T07:51:40Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2432) - 2021-07-15T03:22:30Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2427) - 2021-07-14T16:43:03Z
     <!-- GITHUB:END -->
     </td>
     </tr>
