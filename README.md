@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2455) - 2021-07-17T13:45:17Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2454) - 2021-07-17T13:37:36Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2452) - 2021-07-17T09:43:42Z
-    - [dejavudwh pushed to main in dejavudwh/WriteUp](https://github.com/dejavudwh/WriteUp/compare/b5776f1cdf...9e5f436da7) - 2021-07-16T14:49:45Z
-    - [dejavudwh commented on issue siyuan-note/siyuan#2436](https://github.com/siyuan-note/siyuan/issues/2436) - 2021-07-15T09:22:40Z
+    - [dejavudwh starred imageworks/pystring](https://github.com/imageworks/pystring) - 2021-07-19T08:12:46Z
+    - [dejavudwh starred northerntechie/coreutils-cpp](https://github.com/northerntechie/coreutils-cpp) - 2021-07-19T08:11:26Z
+    - [dejavudwh pushed to master in dejavudwh/Algorithm](https://github.com/dejavudwh/Algorithm/compare/f605900fe9...7c9717b987) - 2021-07-19T07:31:42Z
+    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/3f4922e43b...39eea71e8c) - 2021-07-19T07:12:04Z
+    - [dejavudwh pushed to main in dejavudwh/newboy](https://github.com/dejavudwh/newboy/compare/d19755e0c4...3f4922e43b) - 2021-07-19T03:35:59Z
     <!-- GITHUB:END -->
     </td>
     </tr>
