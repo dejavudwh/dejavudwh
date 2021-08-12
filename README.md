@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred vulhub/vulhub](https://github.com/vulhub/vulhub) - 2021-08-12T15:15:17Z
+    - [dejavudwh starred romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) - 2021-08-12T14:57:50Z
     - [dejavudwh starred lotuc/PLAI-cn](https://github.com/lotuc/PLAI-cn) - 2021-08-11T11:52:01Z
     - [dejavudwh starred shining1984/PL-Compiler-Resource](https://github.com/shining1984/PL-Compiler-Resource) - 2021-08-11T11:51:51Z
     - [dejavudwh starred moby/moby](https://github.com/moby/moby) - 2021-08-10T02:17:44Z
-    - [dejavudwh pushed to main in dejavudwh/EncryptionToolkit](https://github.com/dejavudwh/EncryptionToolkit/compare/e89d9b2025...4b46ddfa0c) - 2021-07-31T11:50:06Z
-    - [dejavudwh created a branch main in dejavudwh/EncryptionToolkit](https://github.com/dejavudwh/EncryptionToolkit/compare/main) - 2021-07-31T07:55:12Z
     <!-- GITHUB:END -->
     </td>
     </tr>
