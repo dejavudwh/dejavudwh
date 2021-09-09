@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred PetalsOnaWet/lizhi](https://github.com/PetalsOnaWet/lizhi) - 2021-09-09T10:26:01Z
     - [dejavudwh starred phith0n/Mind-Map](https://github.com/phith0n/Mind-Map) - 2021-09-08T09:20:49Z
     - [dejavudwh pushed to master in dejavudwh/Sachet](https://github.com/dejavudwh/Sachet/compare/a975bfa05c...16ec5a0afb) - 2021-09-07T10:44:08Z
     - [dejavudwh pushed to master in dejavudwh/Sachet](https://github.com/dejavudwh/Sachet/compare/dfd024e9d9...a975bfa05c) - 2021-09-07T09:04:55Z
     - [dejavudwh pushed to master in dejavudwh/Sachet](https://github.com/dejavudwh/Sachet/compare/f5f23a5367...dfd024e9d9) - 2021-09-07T05:53:31Z
-    - [dejavudwh pushed to master in dejavudwh/Sachet](https://github.com/dejavudwh/Sachet/compare/1c50cb3cfe...f5f23a5367) - 2021-09-07T03:49:16Z
     <!-- GITHUB:END -->
     </td>
     </tr>
