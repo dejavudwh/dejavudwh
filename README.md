@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred cilium/cilium](https://github.com/cilium/cilium) - 2021-11-17T14:07:08Z
     - [dejavudwh starred felicitychou/MalAnalyzer](https://github.com/felicitychou/MalAnalyzer) - 2021-10-30T15:29:58Z
     - [dejavudwh starred chenyahui/AnnotatedCode](https://github.com/chenyahui/AnnotatedCode) - 2021-10-28T09:01:21Z
     - [dejavudwh starred google/rekall](https://github.com/google/rekall) - 2021-10-23T06:01:33Z
     - [dejavudwh forked dejavudwh/libvmi from libvmi/libvmi](https://github.com/dejavudwh/libvmi) - 2021-10-17T12:07:44Z
-    - [dejavudwh starred tklengyel/drakvuf](https://github.com/tklengyel/drakvuf) - 2021-10-08T04:35:38Z
     <!-- GITHUB:END -->
     </td>
     </tr>
