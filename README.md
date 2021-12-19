@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred ttroy50/cmake-examples](https://github.com/ttroy50/cmake-examples) - 2021-12-19T04:31:07Z
     - [dejavudwh starred QuarkContainer/Quark](https://github.com/QuarkContainer/Quark) - 2021-12-10T06:17:42Z
     - [dejavudwh pushed to master in dejavudwh/Algorithm](https://github.com/dejavudwh/Algorithm/compare/bf4ce62783...bf6ce845c7) - 2021-12-07T05:49:34Z
     - [dejavudwh pushed to master in dejavudwh/Algorithm](https://github.com/dejavudwh/Algorithm/compare/ae30833522...bf4ce62783) - 2021-12-07T02:39:20Z
     - [dejavudwh pushed to master in dejavudwh/Algorithm](https://github.com/dejavudwh/Algorithm/compare/f2cbe401fe...ae30833522) - 2021-12-06T11:11:05Z
-    - [dejavudwh starred ceph/ceph](https://github.com/ceph/ceph) - 2021-12-06T11:09:37Z
     <!-- GITHUB:END -->
     </td>
     </tr>
