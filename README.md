@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred tiddly-gittly/TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop) - 2022-02-05T14:06:10Z
+    - [dejavudwh starred easychen/pushdeer](https://github.com/easychen/pushdeer) - 2022-02-05T07:38:38Z
     - [dejavudwh starred troyeguo/koodo-reader](https://github.com/troyeguo/koodo-reader) - 2022-01-24T03:06:33Z
     - [dejavudwh starred nevermosby/linux-bpf-learning](https://github.com/nevermosby/linux-bpf-learning) - 2022-01-20T14:29:23Z
     - [dejavudwh starred kubearmor/KubeArmor](https://github.com/kubearmor/KubeArmor) - 2022-01-07T02:21:14Z
-    - [dejavudwh starred falcosecurity/falco](https://github.com/falcosecurity/falco) - 2021-12-28T09:48:50Z
-    - [dejavudwh starred eBay/NuRaft](https://github.com/eBay/NuRaft) - 2021-12-23T05:55:14Z
     <!-- GITHUB:END -->
     </td>
     </tr>
