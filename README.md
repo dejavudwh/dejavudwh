@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred ntop/libebpfflow](https://github.com/ntop/libebpfflow) - 2022-02-24T10:13:52Z
     - [dejavudwh starred modernizing/modernization](https://github.com/modernizing/modernization) - 2022-02-17T06:03:31Z
     - [dejavudwh starred polycube-network/polycube](https://github.com/polycube-network/polycube) - 2022-02-16T14:16:44Z
     - [dejavudwh made dejavudwh/MemoryPool public](https://github.com/dejavudwh/MemoryPool) - 2022-02-16T07:57:02Z
     - [dejavudwh starred gamemann/XDP-Firewall](https://github.com/gamemann/XDP-Firewall) - 2022-02-07T02:19:01Z
-    - [dejavudwh starred tiddly-gittly/TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop) - 2022-02-05T14:06:10Z
     <!-- GITHUB:END -->
     </td>
     </tr>
