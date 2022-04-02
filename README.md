@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred xmake-io/xmake](https://github.com/xmake-io/xmake) - 2022-04-02T12:48:55Z
+    - [dejavudwh starred Aya0wind/lelang](https://github.com/Aya0wind/lelang) - 2022-04-02T11:10:16Z
     - [dejavudwh starred ns1/xdp-workshop](https://github.com/ns1/xdp-workshop) - 2022-03-12T10:06:27Z
     - [dejavudwh starred ns1/xdp-workshop](https://github.com/ns1/xdp-workshop) - 2022-03-09T08:40:44Z
     - [dejavudwh starred ntop/libebpfflow](https://github.com/ntop/libebpfflow) - 2022-02-24T10:13:52Z
-    - [dejavudwh starred modernizing/modernization](https://github.com/modernizing/modernization) - 2022-02-17T06:03:31Z
-    - [dejavudwh starred polycube-network/polycube](https://github.com/polycube-network/polycube) - 2022-02-16T14:16:44Z
     <!-- GITHUB:END -->
     </td>
     </tr>
