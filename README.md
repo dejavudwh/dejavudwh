@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred alibaba/LuaViewSDK](https://github.com/alibaba/LuaViewSDK) - 2022-05-19T08:03:21Z
     - [dejavudwh starred ithewei/libhv](https://github.com/ithewei/libhv) - 2022-05-09T05:08:13Z
     - [dejavudwh pushed to master in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/c9002261f0...0f45ce3f17) - 2022-05-08T12:02:10Z
     - [dejavudwh pushed to master in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/8f7c8028da...c9002261f0) - 2022-05-08T08:15:39Z
     - [dejavudwh pushed to master in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/fc8b661c09...8f7c8028da) - 2022-05-08T08:06:41Z
-    - [dejavudwh pushed to master in dejavudwh/dejavudwh.github.io](https://github.com/dejavudwh/dejavudwh.github.io/compare/d5a8276d20...fc8b661c09) - 2022-05-08T08:00:44Z
     <!-- GITHUB:END -->
     </td>
     </tr>
