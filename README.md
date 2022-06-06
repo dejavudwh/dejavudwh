@@ -35,7 +35,7 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh starred Xhofe/alist](https://github.com/Xhofe/alist) - 2022-06-05T07:31:46Z
+    - [dejavudwh starred alist-org/alist](https://github.com/Xhofe/alist) - 2022-06-05T07:31:46Z
     - [dejavudwh forked dejavudwh/KubeArmor from kubearmor/KubeArmor](https://github.com/dejavudwh/KubeArmor) - 2022-05-22T12:49:11Z
     - [dejavudwh starred accuknox/discovery-engine](https://github.com/accuknox/discovery-engine) - 2022-05-22T05:23:11Z
     - [dejavudwh starred Codesire-Deng/liburingcxx](https://github.com/Codesire-Deng/liburingcxx) - 2022-05-21T04:06:22Z
