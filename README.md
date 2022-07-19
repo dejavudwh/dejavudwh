@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/5461) - 2022-07-19T09:42:22Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/5430) - 2022-07-16T02:06:32Z
     - [dejavudwh starred excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) - 2022-07-15T17:16:28Z
     - [dejavudwh pushed to main in dejavudwh/sensekv](https://github.com/dejavudwh/sensekv/compare/71ce2e51d4...c999375c39) - 2022-07-15T13:25:12Z
     - [dejavudwh pushed to main in dejavudwh/sensekv](https://github.com/dejavudwh/sensekv/compare/cf41fcc08e...71ce2e51d4) - 2022-07-15T10:33:58Z
-    - [dejavudwh starred fslongjin/This-repo-has-455-stars](https://github.com/fslongjin/This-repo-has-130-stars) - 2022-07-15T02:20:36Z
     <!-- GITHUB:END -->
     </td>
     </tr>
