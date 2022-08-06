@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/5590) - 2022-08-06T08:04:27Z
     - [dejavudwh starred HVML/PurC](https://github.com/HVML/PurC) - 2022-07-31T12:06:52Z
     - [dejavudwh starred zavier-wong/acid](https://github.com/zavier-wong/acid) - 2022-07-25T08:16:25Z
     - [dejavudwh opened a pull request in hardcore-os/corekv](https://github.com/hardcore-os/corekv/pull/56) - 2022-07-25T03:07:55Z
     - [dejavudwh created a branch dev in dejavudwh/corekv](https://github.com/dejavudwh/corekv/compare/dev) - 2022-07-25T03:06:34Z
-    - [dejavudwh pushed to main in dejavudwh/corekv](https://github.com/dejavudwh/corekv/compare/9b561713f5...ab1f4494d8) - 2022-07-25T02:34:40Z
     <!-- GITHUB:END -->
     </td>
     </tr>
