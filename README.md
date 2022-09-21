@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh forked dejavudwh/tetragon from cilium/tetragon](https://github.com/dejavudwh/tetragon) - 2022-09-21T12:17:43Z
+    - [dejavudwh starred cilium/tetragon](https://github.com/cilium/tetragon) - 2022-09-21T07:47:42Z
     - [dejavudwh starred baidu/braft](https://github.com/baidu/braft) - 2022-09-07T11:15:53Z
     - [dejavudwh starred kifuan/helang](https://github.com/kifuan/helang) - 2022-09-07T11:14:00Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/5590) - 2022-08-06T08:04:27Z
-    - [dejavudwh starred HVML/PurC](https://github.com/HVML/PurC) - 2022-07-31T12:06:52Z
-    - [dejavudwh starred zavier-wong/acid](https://github.com/zavier-wong/acid) - 2022-07-25T08:16:25Z
     <!-- GITHUB:END -->
     </td>
     </tr>
