@@ -25,16 +25,21 @@
     <td>
     <!-- ZHIHUPOSTS:START --> 
 
+    - [从零实现正则表达式引擎：DFA最小化](http://zhuanlan.zhihu.com/p/349264940) - Thu, 04 Feb 2021 07:22:26 GMT
+    - [Github新玩具：Python + Action自动更新Profile](http://zhuanlan.zhihu.com/p/349262045) - Thu, 04 Feb 2021 07:19:54 GMT
+    - [从零实现正则表达式引擎：从NFA到DFA](http://zhuanlan.zhihu.com/p/348298134) - Sun, 31 Jan 2021 03:50:57 GMT
+    - [从零实现正则表达式引擎：复杂的NFA](http://zhuanlan.zhihu.com/p/347938422) - Fri, 29 Jan 2021 07:09:10 GMT
+    - [从零实现正则表达式引擎：简单的NFA](http://zhuanlan.zhihu.com/p/347617984) - Thu, 28 Jan 2021 03:11:49 GMT
     <!-- ZHIHUPOSTS:END -->
     </td>
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred slidevjs/slidev](https://github.com/slidevjs/slidev) - 2022-10-10T15:28:08Z
+    - [dejavudwh starred 0voice/introduce_c-cpp_manual](https://github.com/0voice/introduce_c-cpp_manual) - 2022-10-10T06:44:21Z
     - [dejavudwh forked dejavudwh/tetragon from cilium/tetragon](https://github.com/dejavudwh/tetragon) - 2022-09-21T12:17:43Z
     - [dejavudwh starred cilium/tetragon](https://github.com/cilium/tetragon) - 2022-09-21T07:47:42Z
     - [dejavudwh starred baidu/braft](https://github.com/baidu/braft) - 2022-09-07T11:15:53Z
-    - [dejavudwh starred kifuan/helang](https://github.com/kifuan/helang) - 2022-09-07T11:14:00Z
-    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/5590) - 2022-08-06T08:04:27Z
     <!-- GITHUB:END -->
     </td>
     </tr>
