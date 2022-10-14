@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred XmacsLabs/mogan](https://github.com/XmacsLabs/mogan) - 2022-10-14T02:30:33Z
     - [dejavudwh starred slidevjs/slidev](https://github.com/slidevjs/slidev) - 2022-10-10T15:28:08Z
     - [dejavudwh starred 0voice/introduce_c-cpp_manual](https://github.com/0voice/introduce_c-cpp_manual) - 2022-10-10T06:44:21Z
     - [dejavudwh forked dejavudwh/tetragon from cilium/tetragon](https://github.com/dejavudwh/tetragon) - 2022-09-21T12:17:43Z
     - [dejavudwh starred cilium/tetragon](https://github.com/cilium/tetragon) - 2022-09-21T07:47:42Z
-    - [dejavudwh starred baidu/braft](https://github.com/baidu/braft) - 2022-09-07T11:15:53Z
     <!-- GITHUB:END -->
     </td>
     </tr>
