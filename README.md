@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred uNetworking/uWebSockets](https://github.com/uNetworking/uWebSockets) - 2022-11-07T08:48:40Z
     - [dejavudwh opened an issue in brektrou/rtl8821CU](https://github.com/brektrou/rtl8821CU/issues/196) - 2022-11-02T14:56:14Z
     - [dejavudwh commented on issue lwfinger/rtl8188eu#357](https://github.com/lwfinger/rtl8188eu/issues/357) - 2022-11-02T14:44:35Z
     - [dejavudwh commented on issue hashicorp/vagrant#12691](https://github.com/hashicorp/vagrant/issues/12691) - 2022-10-29T02:59:20Z
     - [dejavudwh starred nhivp/Awesome-Embedded](https://github.com/nhivp/Awesome-Embedded) - 2022-10-19T17:07:52Z
-    - [dejavudwh starred XmacsLabs/mogan](https://github.com/XmacsLabs/mogan) - 2022-10-14T02:30:33Z
     <!-- GITHUB:END -->
     </td>
     </tr>
