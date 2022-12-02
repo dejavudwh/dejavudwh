@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred SeetaFace6Open/index](https://github.com/SeetaFace6Open/index) - 2022-12-02T02:05:04Z
     - [dejavudwh starred ageitgey/face_recognition](https://github.com/ageitgey/face_recognition) - 2022-11-30T03:17:03Z
     - [dejavudwh starred avem-labs/Avem](https://github.com/avem-labs/Avem) - 2022-11-11T03:06:14Z
     - [dejavudwh starred uNetworking/uWebSockets](https://github.com/uNetworking/uWebSockets) - 2022-11-07T08:48:40Z
     - [dejavudwh opened an issue in brektrou/rtl8821CU](https://github.com/brektrou/rtl8821CU/issues/196) - 2022-11-02T14:56:14Z
-    - [dejavudwh commented on issue lwfinger/rtl8188eu#357](https://github.com/lwfinger/rtl8188eu/issues/357) - 2022-11-02T14:44:35Z
     <!-- GITHUB:END -->
     </td>
     </tr>
