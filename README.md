@@ -35,11 +35,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh commented on issue siyuan-note/siyuan#6907](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-22T13:49:18Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-22T13:37:51Z
     - [dejavudwh starred ARM-software/u-boot](https://github.com/ARM-software/u-boot) - 2022-12-03T09:20:37Z
     - [dejavudwh starred SeetaFace6Open/index](https://github.com/SeetaFace6Open/index) - 2022-12-02T02:05:04Z
     - [dejavudwh starred ageitgey/face_recognition](https://github.com/ageitgey/face_recognition) - 2022-11-30T03:17:03Z
-    - [dejavudwh starred avem-labs/Avem](https://github.com/avem-labs/Avem) - 2022-11-11T03:06:14Z
-    - [dejavudwh starred uNetworking/uWebSockets](https://github.com/uNetworking/uWebSockets) - 2022-11-07T08:48:40Z
     <!-- GITHUB:END -->
     </td>
     </tr>
