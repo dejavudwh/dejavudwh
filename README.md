@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh commented on issue siyuan-note/siyuan#6907](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-25T03:02:45Z
     - [dejavudwh commented on issue siyuan-note/siyuan#6907](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-23T13:30:55Z
     - [dejavudwh commented on issue siyuan-note/siyuan#6907](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-23T07:17:26Z
     - [dejavudwh commented on issue siyuan-note/siyuan#6907](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-22T13:49:18Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/6907) - 2022-12-22T13:37:51Z
-    - [dejavudwh starred ARM-software/u-boot](https://github.com/ARM-software/u-boot) - 2022-12-03T09:20:37Z
     <!-- GITHUB:END -->
     </td>
     </tr>
