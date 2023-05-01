@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/6) - 2023-04-30T20:02:08Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/5) - 2023-04-30T20:00:33Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/4) - 2023-04-30T19:57:30Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/3) - 2023-04-30T19:55:34Z
-    - [dejavudwh opened a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7432) - 2023-04-30T09:00:55Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/7) - 2023-04-30T20:17:50Z
+    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/5) - 2023-04-30T20:08:18Z
+    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/4) - 2023-04-30T20:08:18Z
+    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/2) - 2023-04-30T20:08:17Z
+    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/1) - 2023-04-30T20:08:17Z
     <!-- GITHUB:END -->
     </td>
     </tr>
