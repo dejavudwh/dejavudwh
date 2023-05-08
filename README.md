@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh forked dejavudwh/rt-thread from RT-Thread/rt-thread](https://github.com/dejavudwh/rt-thread) - 2023-05-08T18:02:26Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/6f1a984653...4ea5e67ef2) - 2023-05-08T17:58:02Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/8) - 2023-05-06T21:09:26Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/7) - 2023-04-30T20:17:50Z
     - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/5) - 2023-04-30T20:08:18Z
-    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/4) - 2023-04-30T20:08:18Z
-    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/2) - 2023-04-30T20:08:17Z
     <!-- GITHUB:END -->
     </td>
     </tr>
