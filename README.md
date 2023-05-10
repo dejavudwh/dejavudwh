@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7469) - 2023-05-09T18:24:06Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/9ba292d0e6...d5117d03cf) - 2023-05-09T18:18:12Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/1ac950a6bf...9ba292d0e6) - 2023-05-09T18:11:46Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/773385c6d2...1ac950a6bf) - 2023-05-09T17:57:40Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/3291882b38...773385c6d2) - 2023-05-09T17:39:47Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/7aaf5babb3...3291882b38) - 2023-05-09T14:25:36Z
-    - [dejavudwh closed a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7462) - 2023-05-09T14:25:02Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/6335671d68...7aaf5babb3) - 2023-05-09T14:24:53Z
     <!-- GITHUB:END -->
     </td>
     </tr>
