@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh opened a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7469) - 2023-05-09T18:24:06Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/9ba292d0e6...d5117d03cf) - 2023-05-09T18:18:12Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/1ac950a6bf...9ba292d0e6) - 2023-05-09T18:11:46Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/773385c6d2...1ac950a6bf) - 2023-05-09T17:57:40Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/3291882b38...773385c6d2) - 2023-05-09T17:39:47Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#10](https://github.com/dejavudwh/about-rt-thread/issues/10) - 2023-05-11T17:58:28Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/10) - 2023-05-11T17:58:04Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/9) - 2023-05-11T17:56:37Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/e1c023b1c4...e55356b51c) - 2023-05-11T12:52:35Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/f85b2c5e7c...e1c023b1c4) - 2023-05-11T12:49:40Z
     <!-- GITHUB:END -->
     </td>
     </tr>
