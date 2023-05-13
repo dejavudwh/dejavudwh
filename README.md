@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh created a branch format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/format-ignore) - 2023-05-13T15:27:15Z
     - [dejavudwh commented on pull request RT-Thread/rt-thread#7469](https://github.com/RT-Thread/rt-thread/pull/7469) - 2023-05-12T08:02:58Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/133ac343bf...11ecde250b) - 2023-05-12T03:27:00Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/caf06f7314...133ac343bf) - 2023-05-12T02:27:50Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/e55356b51c...caf06f7314) - 2023-05-12T02:24:32Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#10](https://github.com/dejavudwh/about-rt-thread/issues/10) - 2023-05-11T17:58:28Z
     <!-- GITHUB:END -->
     </td>
     </tr>
