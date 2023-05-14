@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh created a branch format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/format-ignore) - 2023-05-13T15:27:15Z
-    - [dejavudwh commented on pull request RT-Thread/rt-thread#7469](https://github.com/RT-Thread/rt-thread/pull/7469) - 2023-05-12T08:02:58Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/133ac343bf...11ecde250b) - 2023-05-12T03:27:00Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/caf06f7314...133ac343bf) - 2023-05-12T02:27:50Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/e55356b51c...caf06f7314) - 2023-05-12T02:24:32Z
+    - [dejavudwh commented on pull request RT-Thread/rt-thread#7499](https://github.com/RT-Thread/rt-thread/pull/7499) - 2023-05-14T14:34:00Z
+    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5bd39d86fc...d931fbef42) - 2023-05-14T14:33:41Z
+    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/f7693430f1...5bd39d86fc) - 2023-05-14T14:29:52Z
+    - [dejavudwh starred rust-embedded/embedded-hal](https://github.com/rust-embedded/embedded-hal) - 2023-05-14T13:23:41Z
+    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5d2a179686...d5ca69a8aa) - 2023-05-14T11:01:00Z
     <!-- GITHUB:END -->
     </td>
     </tr>
