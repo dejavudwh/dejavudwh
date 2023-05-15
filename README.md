@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh commented on pull request RT-Thread/rt-thread#7499](https://github.com/RT-Thread/rt-thread/pull/7499) - 2023-05-14T14:34:00Z
-    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5bd39d86fc...d931fbef42) - 2023-05-14T14:33:41Z
-    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/f7693430f1...5bd39d86fc) - 2023-05-14T14:29:52Z
-    - [dejavudwh starred rust-embedded/embedded-hal](https://github.com/rust-embedded/embedded-hal) - 2023-05-14T13:23:41Z
-    - [dejavudwh pushed to CI-filecheck-format-ignore in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5d2a179686...d5ca69a8aa) - 2023-05-14T11:01:00Z
+    - [dejavudwh reopened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/5) - 2023-05-15T16:52:42Z
+    - [dejavudwh reopened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/4) - 2023-05-15T16:51:55Z
+    - [dejavudwh reopened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/3) - 2023-05-15T16:51:37Z
+    - [dejavudwh reopened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/2) - 2023-05-15T16:51:22Z
+    - [dejavudwh reopened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/1) - 2023-05-15T16:51:10Z
     <!-- GITHUB:END -->
     </td>
     </tr>
