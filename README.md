@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/30) - 2023-06-01T14:36:40Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/29) - 2023-05-31T14:30:39Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/28) - 2023-05-30T15:13:07Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#27](https://github.com/dejavudwh/about-rt-thread/issues/27) - 2023-05-30T14:52:21Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#27](https://github.com/dejavudwh/about-rt-thread/issues/27) - 2023-05-30T14:52:12Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/27) - 2023-05-30T13:42:50Z
     <!-- GITHUB:END -->
     </td>
     </tr>
