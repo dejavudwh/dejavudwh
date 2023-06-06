@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#34](https://github.com/dejavudwh/about-rt-thread/issues/34) - 2023-06-06T16:12:13Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/34) - 2023-06-06T11:38:32Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/33) - 2023-06-05T14:23:07Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#32](https://github.com/dejavudwh/about-rt-thread/issues/32) - 2023-06-03T16:29:06Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/32) - 2023-06-03T14:22:27Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/31) - 2023-06-02T18:50:28Z
-    - [dejavudwh starred stm32-rs/stm32f0xx-hal](https://github.com/stm32-rs/stm32f0xx-hal) - 2023-06-02T18:14:09Z
     <!-- GITHUB:END -->
     </td>
     </tr>
