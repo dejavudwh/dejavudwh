@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#34](https://github.com/dejavudwh/about-rt-thread/issues/34) - 2023-06-06T16:12:13Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/34) - 2023-06-06T11:38:32Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/33) - 2023-06-05T14:23:07Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#32](https://github.com/dejavudwh/about-rt-thread/issues/32) - 2023-06-03T16:29:06Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/32) - 2023-06-03T14:22:27Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/41) - 2023-06-07T14:18:23Z
+    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/40) - 2023-06-07T13:16:56Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#38](https://github.com/dejavudwh/about-rt-thread/issues/38) - 2023-06-07T13:09:03Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#38](https://github.com/dejavudwh/about-rt-thread/issues/38) - 2023-06-07T13:03:16Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#38](https://github.com/dejavudwh/about-rt-thread/issues/38) - 2023-06-07T12:56:47Z
     <!-- GITHUB:END -->
     </td>
     </tr>
