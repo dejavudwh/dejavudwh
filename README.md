@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/0cb2a5e735...446fdf1329) - 2023-06-13T15:02:22Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/0cb2a5e735...446fdf1329) - 2023-06-13T15:02:22Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-13T13:40:47Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-11T15:28:08Z
     - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/4b4c3c85f2...0cb2a5e735) - 2023-06-11T03:30:02Z
-    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/4b4c3c85f2...0cb2a5e735) - 2023-06-11T03:30:01Z
-    - [dejavudwh starred tock/tock](https://github.com/tock/tock) - 2023-06-09T15:33:20Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-09T14:58:24Z
     <!-- GITHUB:END -->
     </td>
     </tr>
