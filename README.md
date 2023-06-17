@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/446fdf1329...7d8f485321) - 2023-06-17T06:48:58Z
+    - [dejavudwh pushed to master in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/446fdf1329...7d8f485321) - 2023-06-17T06:48:58Z
+    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-17T02:39:40Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-16T16:16:23Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-15T15:59:51Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-15T15:59:37Z
-    - [dejavudwh closed an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/41) - 2023-06-14T09:18:09Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#41](https://github.com/dejavudwh/about-rt-thread/issues/41) - 2023-06-14T09:18:07Z
     <!-- GITHUB:END -->
     </td>
     </tr>
