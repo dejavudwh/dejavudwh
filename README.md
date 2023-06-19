@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-18T15:02:28Z
-    - [dejavudwh pushed to stm32l496-menuconfig-support in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/83df42de79...91b58422ba) - 2023-06-18T14:18:40Z
-    - [dejavudwh pushed to stm32l496-menuconfig-support in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/88bf17e112...83df42de79) - 2023-06-18T12:21:16Z
-    - [dejavudwh pushed to stm32l496-menuconfig-support in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/f652adc1ae...88bf17e112) - 2023-06-18T10:04:18Z
-    - [dejavudwh pushed to stm32l496-menuconfig-support in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/7acbfbc833...f652adc1ae) - 2023-06-18T09:50:00Z
+    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/c2cdb8db5f...371a81f1e8) - 2023-06-19T14:32:39Z
+    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/b68fb7f682...c2cdb8db5f) - 2023-06-19T14:22:39Z
+    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/737ff244ed...b68fb7f682) - 2023-06-19T14:08:38Z
+    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/3a7cfbf829...737ff244ed) - 2023-06-19T14:05:20Z
+    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/2d3833f565...3a7cfbf829) - 2023-06-19T13:58:27Z
     <!-- GITHUB:END -->
     </td>
     </tr>
