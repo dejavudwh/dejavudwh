@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred ziglang/zig](https://github.com/ziglang/zig) - 2023-06-25T13:00:35Z
     - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-22T15:54:56Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/44) - 2023-06-20T11:52:37Z
     - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/43) - 2023-06-20T11:47:57Z
     - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/c2cdb8db5f...371a81f1e8) - 2023-06-19T14:32:39Z
-    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/b68fb7f682...c2cdb8db5f) - 2023-06-19T14:22:39Z
     <!-- GITHUB:END -->
     </td>
     </tr>
