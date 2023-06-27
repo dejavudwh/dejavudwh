@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh starred ziglang/zig](https://github.com/ziglang/zig) - 2023-06-25T13:00:35Z
-    - [dejavudwh commented on issue dejavudwh/about-rt-thread#42](https://github.com/dejavudwh/about-rt-thread/issues/42) - 2023-06-22T15:54:56Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/44) - 2023-06-20T11:52:37Z
-    - [dejavudwh opened an issue in dejavudwh/about-rt-thread](https://github.com/dejavudwh/about-rt-thread/issues/43) - 2023-06-20T11:47:57Z
-    - [dejavudwh pushed to option-compile-bsp in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/c2cdb8db5f...371a81f1e8) - 2023-06-19T14:32:39Z
+    - [dejavudwh commented on pull request RT-Thread/rt-thread#7738](https://github.com/RT-Thread/rt-thread/pull/7738) - 2023-06-27T10:59:38Z
+    - [dejavudwh opened a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7738) - 2023-06-27T10:54:30Z
+    - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/4d7c82e72d...5a4dce76dd) - 2023-06-27T10:46:26Z
+    - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/90568e2d2d...4d7c82e72d) - 2023-06-27T10:34:58Z
+    - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5d86cacee6...90568e2d2d) - 2023-06-27T10:29:58Z
     <!-- GITHUB:END -->
     </td>
     </tr>
