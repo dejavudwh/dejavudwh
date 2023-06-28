@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/908c23ccf0...906ec781c0) - 2023-06-28T07:14:44Z
     - [dejavudwh commented on pull request RT-Thread/rt-thread#7738](https://github.com/RT-Thread/rt-thread/pull/7738) - 2023-06-27T10:59:38Z
     - [dejavudwh opened a pull request in RT-Thread/rt-thread](https://github.com/RT-Thread/rt-thread/pull/7738) - 2023-06-27T10:54:30Z
     - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/4d7c82e72d...5a4dce76dd) - 2023-06-27T10:46:26Z
     - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/90568e2d2d...4d7c82e72d) - 2023-06-27T10:34:58Z
-    - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/5d86cacee6...90568e2d2d) - 2023-06-27T10:29:58Z
     <!-- GITHUB:END -->
     </td>
     </tr>
