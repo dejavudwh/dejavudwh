@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred ZigEmbeddedGroup/microzig](https://github.com/ZigEmbeddedGroup/microzig) - 2023-07-03T06:55:02Z
     - [dejavudwh starred rust-embedded/awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust) - 2023-06-29T02:44:35Z
     - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/c6cfb4851e...9500475647) - 2023-06-29T02:05:35Z
     - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/906ec781c0...c6cfb4851e) - 2023-06-29T02:01:59Z
     - [dejavudwh pushed to bsp-compilation-with-other-driver in dejavudwh/rt-thread](https://github.com/dejavudwh/rt-thread/compare/908c23ccf0...906ec781c0) - 2023-06-28T07:14:44Z
-    - [dejavudwh commented on pull request RT-Thread/rt-thread#7738](https://github.com/RT-Thread/rt-thread/pull/7738) - 2023-06-27T10:59:38Z
     <!-- GITHUB:END -->
     </td>
     </tr>
