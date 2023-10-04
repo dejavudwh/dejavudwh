@@ -33,7 +33,6 @@
     - [dejavudwh starred bytecodealliance/wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime) - 2023-09-02T05:34:35Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/8955) - 2023-08-11T07:35:17Z
     - [dejavudwh starred kenjihiranabe/The-Art-of-Linear-Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra) - 2023-08-01T08:46:49Z
-    - [dejavudwh starred ZigEmbeddedGroup/microzig](https://github.com/ZigEmbeddedGroup/microzig) - 2023-07-03T06:55:02Z
     <!-- GITHUB:END -->
     </td>
     </tr>
