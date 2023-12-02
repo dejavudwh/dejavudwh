@@ -30,7 +30,6 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh starred bytecodealliance/wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime) - 2023-09-02T05:34:35Z
     <!-- GITHUB:END -->
     </td>
     </tr>
