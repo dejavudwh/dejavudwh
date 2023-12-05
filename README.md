@@ -30,6 +30,8 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/9825) - 2023-12-05T19:13:52Z
+    - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/9824) - 2023-12-05T19:12:36Z
     <!-- GITHUB:END -->
     </td>
     </tr>
