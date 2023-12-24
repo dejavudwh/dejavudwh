@@ -30,6 +30,8 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh pushed to main in dejavudwh/tetragon](https://github.com/dejavudwh/tetragon/compare/1a68bf2681...a250225c19) - 2023-12-24T16:47:47Z
+    - [dejavudwh forked dejavudwh/tracee from aquasecurity/tracee](https://github.com/dejavudwh/tracee) - 2023-12-24T16:38:51Z
     - [dejavudwh starred bytedance/vArmor](https://github.com/bytedance/vArmor) - 2023-12-17T04:48:29Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/9825) - 2023-12-05T19:13:52Z
     - [dejavudwh opened an issue in siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/9824) - 2023-12-05T19:12:36Z
