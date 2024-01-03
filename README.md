@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh forked dejavudwh/vArmor from bytedance/vArmor](https://github.com/dejavudwh/vArmor) - 2024-01-03T18:23:41Z
     - [dejavudwh pushed to main in dejavudwh/tracee](https://github.com/dejavudwh/tracee/compare/17c1924fd6...61d36285ae) - 2023-12-30T08:48:15Z
     - [dejavudwh forked dejavudwh/krie from Gui774ume/krie](https://github.com/dejavudwh/krie) - 2023-12-27T16:48:07Z
     - [dejavudwh starred Gui774ume/krie](https://github.com/Gui774ume/krie) - 2023-12-27T15:35:07Z
     - [dejavudwh pushed to main in dejavudwh/KubeArmor](https://github.com/dejavudwh/KubeArmor/compare/d6db731c7e...e64ccb7fed) - 2023-12-26T17:10:50Z
-    - [dejavudwh pushed to main in dejavudwh/tetragon](https://github.com/dejavudwh/tetragon/compare/1a68bf2681...a250225c19) - 2023-12-24T16:47:47Z
     <!-- GITHUB:END -->
     </td>
     </tr>
