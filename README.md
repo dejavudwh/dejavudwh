@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh opened an issue in kubearmor/KubeArmor](https://github.com/kubearmor/KubeArmor/issues/1592) - 2024-01-23T15:01:27Z
+    - [dejavudwh opened an issue in bytedance/vArmor](https://github.com/bytedance/vArmor/issues/25) - 2024-01-23T14:25:41Z
     - [dejavudwh opened an issue in cilium/tetragon](https://github.com/cilium/tetragon/issues/1947) - 2024-01-08T20:01:10Z
     - [dejavudwh forked dejavudwh/ved-ebpf from hardenedvault/ved-ebpf](https://github.com/dejavudwh/ved-ebpf) - 2024-01-07T18:57:36Z
     - [dejavudwh starred hardenedvault/ved-ebpf](https://github.com/hardenedvault/ved-ebpf) - 2024-01-07T18:57:32Z
-    - [dejavudwh pushed to main in dejavudwh/vArmor](https://github.com/dejavudwh/vArmor/compare/8a4f802d62...c34744d9e7) - 2024-01-07T18:52:51Z
-    - [dejavudwh pushed to main in dejavudwh/tracee](https://github.com/dejavudwh/tracee/compare/61d36285ae...4be97e0841) - 2024-01-07T18:51:07Z
     <!-- GITHUB:END -->
     </td>
     </tr>
