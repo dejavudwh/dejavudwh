@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred bytedance/Elkeid](https://github.com/bytedance/Elkeid) - 2024-02-12T17:37:31Z
+    - [dejavudwh commented on issue cilium/tetragon#1947](https://github.com/cilium/tetragon/issues/1947) - 2024-02-12T17:24:26Z
     - [dejavudwh commented on issue bytedance/vArmor#28](https://github.com/bytedance/vArmor/issues/28) - 2024-02-11T08:17:43Z
     - [dejavudwh commented on issue bytedance/vArmor#28](https://github.com/bytedance/vArmor/issues/28) - 2024-02-08T09:10:24Z
     - [dejavudwh opened an issue in bytedance/vArmor](https://github.com/bytedance/vArmor/issues/28) - 2024-02-07T15:31:25Z
-    - [dejavudwh opened an issue in kubearmor/KubeArmor](https://github.com/kubearmor/KubeArmor/issues/1614) - 2024-02-07T15:16:05Z
-    - [dejavudwh starred brant-ruan/awesome-container-escape](https://github.com/brant-ruan/awesome-container-escape) - 2024-02-04T14:38:53Z
     <!-- GITHUB:END -->
     </td>
     </tr>
