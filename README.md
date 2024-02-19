@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred genuinetools/bane](https://github.com/genuinetools/bane) - 2024-02-19T16:13:28Z
+    - [dejavudwh commented on issue kubearmor/KubeArmor#1639](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-19T12:42:15Z
     - [dejavudwh opened an issue in kubearmor/KubeArmor](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-17T14:02:09Z
     - [dejavudwh commented on issue cilium/tetragon#1632](https://github.com/cilium/tetragon/issues/1632) - 2024-02-15T08:17:49Z
     - [dejavudwh pushed to main in dejavudwh/KubeArmor](https://github.com/dejavudwh/KubeArmor/compare/e64ccb7fed...d12c30ff08) - 2024-02-14T07:22:45Z
-    - [dejavudwh pushed to main in dejavudwh/tracee](https://github.com/dejavudwh/tracee/compare/4be97e0841...9ff652e7c7) - 2024-02-14T07:22:08Z
-    - [dejavudwh pushed to main in dejavudwh/tetragon](https://github.com/dejavudwh/tetragon/compare/56edf166e6...bbce04f5ec) - 2024-02-14T07:21:34Z
     <!-- GITHUB:END -->
     </td>
     </tr>
