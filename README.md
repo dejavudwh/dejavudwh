@@ -30,11 +30,11 @@
     <td>
     <!-- GITHUB:START -->
 
+    - [dejavudwh starred arthepsy/CVE-2021-4034](https://github.com/arthepsy/CVE-2021-4034) - 2024-03-09T04:19:09Z
     - [dejavudwh commented on issue kubearmor/KubeArmor#1639](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-29T11:34:49Z
     - [dejavudwh commented on issue kubearmor/KubeArmor#1639](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-28T09:15:05Z
     - [dejavudwh commented on issue kubearmor/KubeArmor#1639](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-20T07:58:11Z
     - [dejavudwh starred genuinetools/bane](https://github.com/genuinetools/bane) - 2024-02-19T16:13:28Z
-    - [dejavudwh commented on issue kubearmor/KubeArmor#1639](https://github.com/kubearmor/KubeArmor/issues/1639) - 2024-02-19T12:42:15Z
     <!-- GITHUB:END -->
     </td>
     </tr>
