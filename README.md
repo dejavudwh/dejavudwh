@@ -30,7 +30,6 @@
     <td>
     <!-- GITHUB:START -->
 
-    - [dejavudwh starred arthepsy/CVE-2021-4034](https://github.com/arthepsy/CVE-2021-4034) - 2024-03-09T04:19:09Z
     <!-- GITHUB:END -->
     </td>
     </tr>
